@@ -174,7 +174,7 @@ app.add_middleware(AuditLogMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
 
 # 3/ Input Validation
-app.add_middleware(InputValidationMiddleware)
+# app.add_middleware(InputValidationMiddleware)
 
 # 2/ Body size limit
 app.add_middleware(BodySizeLimitMiddleware)
