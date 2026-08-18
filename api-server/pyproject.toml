@@ -1,0 +1,18 @@
+[tool.pytest.ini_options]
+testpaths = [
+    "tests/unit",
+    "tests/integration",
+    "tests/security",
+    "tests/payments",
+    "tests/load",
+    "tests/e2e"
+]
+markers = [
+    "unit",
+    "integration",
+    "security",
+    "payments",
+    "slow",
+    "load"
+]
+addopts = "--cov=api-server --cov-report=term-missing:skip-covered --cov-report=xml:coverage.xml --junitxml=junit.xml"

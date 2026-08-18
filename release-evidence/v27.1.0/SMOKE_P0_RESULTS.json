@@ -1,0 +1,107 @@
+{
+  "boot": true,
+  "routes": 298,
+  "tests": [
+    {
+      "name": "app_import",
+      "ok": true,
+      "detail": "298 routes registered"
+    },
+    {
+      "name": "route:/health",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "route:/api/v1/whatsapp/webhook",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "route:/api/v1/social/instagram/webhook",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "route:/api/v1/social/facebook/webhook",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "route:/api/v1/social/tiktok/webhook",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "route:/api/v1/social/webhook",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "route:/api/v1/appointments/",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "route:/api/v1/appointments/services",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "route:/api/v1/appointments/availability",
+      "ok": true,
+      "detail": "registered"
+    },
+    {
+      "name": "db_schema_create",
+      "ok": true,
+      "detail": "tables created on sqlite"
+    },
+    {
+      "name": "GET /health",
+      "ok": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "GET /api/v1/whatsapp/webhook (verify)",
+      "ok": true,
+      "detail": "status=200 body=12345"
+    },
+    {
+      "name": "GET /api/v1/social/instagram/webhook",
+      "ok": true,
+      "detail": "status=200 body=abc"
+    },
+    {
+      "name": "GET /api/v1/social/facebook/webhook",
+      "ok": true,
+      "detail": "status=200 body=abc"
+    },
+    {
+      "name": "GET /api/v1/social/tiktok/webhook (disabled flag)",
+      "ok": true,
+      "detail": "status=503 body={\"error\":\"TikTok integration disabled\"}"
+    },
+    {
+      "name": "GET /api/v1/appointments/ (auth required)",
+      "ok": true,
+      "detail": "status=401 (expected 401)"
+    },
+    {
+      "name": "GET /api/v1/appointments/services (auth required)",
+      "ok": true,
+      "detail": "status=401 (expected 401)"
+    },
+    {
+      "name": "GET /api/v1/appointments/availability (auth required)",
+      "ok": true,
+      "detail": "status=401 (expected 401)"
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "passed": 19,
+    "total": 19,
+    "ok": true
+  }
+}

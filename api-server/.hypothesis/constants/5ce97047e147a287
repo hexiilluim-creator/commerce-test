@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/middleware/body_limit.py
+# hypothesis_version: 6.131.9
+
+[413, 512, 1024, 'content-length', 'error', 'max_bytes', 'received_bytes']

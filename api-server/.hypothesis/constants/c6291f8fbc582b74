@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/social.py
+# hypothesis_version: 6.131.9
+
+[401, 403, 404, '/facebook', '/facebook/connect', '/instagram', '/instagram/connect', '/social', '/status', '/tiktok', '/tiktok/connect', 'Admin role required', 'No tenant context', 'Social Media BYOK', 'Store not found', 'account_id', 'admin', 'connected', 'facebook', 'instagram', 'network', 'open_id', 'page_id', 'page_name', 'social', 'tiktok', 'username']

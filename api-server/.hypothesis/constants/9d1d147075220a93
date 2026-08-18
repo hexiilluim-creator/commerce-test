@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/models/predictive_restocking.py
+# hypothesis_version: 6.131.9
+
+[0.0, 255, 'SET NULL', 'acknowledged', 'approved', 'critical', 'forecast_date', 'high', 'info', 'low', 'medium', 'open', 'ordered', 'pending', 'product_variants.id', 'received', 'rejected', 'resolved', 'restock_alert_status', 'restock_alerts', 'restock_forecasts', 'restock_seasonality', 'restock_suggestions', 'sku', 'snoozed', 'store_id']

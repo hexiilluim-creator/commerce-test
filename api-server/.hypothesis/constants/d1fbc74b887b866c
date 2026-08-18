@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/normalizers/facebook.py
+# hypothesis_version: 6.131.9
+
+['body', 'display_name', 'event_at', 'id', 'interactive', 'message_id', 'message_kind', 'metadata', 'mid', 'page_id', 'psid', 'recipient', 'recipient_id', 'sender', 'sender_id', 'store_id', 'tenant_ref', 'text', 'timestamp', 'trace_id', 'type']

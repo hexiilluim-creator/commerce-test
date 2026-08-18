@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/email_sender.py
+# hypothesis_version: 6.131.9
+
+['From', 'SMTP non configuré', 'Subject', 'To', 'alternative', 'autocommerce.email', 'delivery_failed', 'email.attempt', 'email.error', 'email.send', 'email.store_id', 'email.template', 'generic', 'html', 'utf-8']

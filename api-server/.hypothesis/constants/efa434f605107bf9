@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/utils/whatsapp_client.py
+# hypothesis_version: 6.131.9
+
+['?', 'Authorization', 'Content-Type', 'Voir les options', 'action', 'application/json', 'body', 'button', 'buttons', 'caption', 'code', 'components', 'fr', 'id', 'image', 'interactive', 'language', 'link', 'list', 'message_id', 'messaging_product', 'name', 'preview_url', 'read', 'sections', 'status', 'template', 'text', 'to', 'type', 'whatsapp']

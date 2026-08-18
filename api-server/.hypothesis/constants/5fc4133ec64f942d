@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/utils/channel_router.py
+# hypothesis_version: 6.131.9
+
+['?', '_', 'channel', 'error', 'facebook', 'from_store', 'id', 'instagram', 'is_configured', 'not_supported', 'status', 'tiktok', 'title', 'whatsapp']

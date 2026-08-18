@@ -1,0 +1,464 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "currency": "USD",
+  "currencySymbol": "$",
+  "nav": {
+    "features": "Features",
+    "audiences": "Industries",
+    "pricing": "Pricing",
+    "about": "About",
+    "freeTrial": "Free Trial"
+  },
+  "hero": {
+    "title": "Sell Without Commission, Get Paid Directly",
+    "titleAccent": "with AI",
+    "subtitle": "The AI platform that manages your sales on WhatsApp, Facebook and Instagram. Zero commission, advanced security, multi-country payments.",
+    "cta": "Start Free",
+    "demo": "See Demo"
+  },
+  "slides": {
+    "0": {
+      "title": "Your store, always open",
+      "desc": "Sell 24/7 with AutoCommerce AI"
+    },
+    "1": {
+      "title": "Artisans & Creators",
+      "desc": "Receive orders directly on WhatsApp"
+    },
+    "2": {
+      "title": "Salons & Beauty Businesses",
+      "desc": "Manage appointments and clients effortlessly"
+    },
+    "3": {
+      "title": "Live Commerce & Social Media",
+      "desc": "Sell live on Instagram, TikTok & Facebook"
+    }
+  },
+  "waBadge": "Live Orders",
+  "stats": {
+    "revenue": "in revenue generated",
+    "ai": "AI Support 24/7",
+    "time": "of time saved",
+    "secure": "Secure & Certified"
+  },
+  "features": {
+    "sectionTitle": "Why AutoCommerce?",
+    "sectionSub": "A complete platform to sell without friction",
+    "f1Title": "Zero Commission on Payments",
+    "f1Desc": "Unlike other platforms, AutoCommerce takes NO commission. Your customers' money goes directly to your bank account via Stripe, Flouci, CMI or other local providers. You keep 100% of your revenue.",
+    "f1l1": "No commission on transactions",
+    "f1l2": "Money received directly to your account",
+    "f1l3": "Multi-country support (TN, MA, DZ, AE, etc.)",
+    "f2Title": "Advanced & Certified Security",
+    "f2Desc": "Your bank details never pass through our servers. All payments are processed by PCI-DSS certified providers (Stripe, Flouci, CMI). We use Fernet encryption for API keys and secure webhooks for every transaction.",
+    "f2l1": "PCI-DSS certifications from providers",
+    "f2l2": "Encryption of sensitive data",
+    "f2l3": "Secure webhooks with signature verification"
+  },
+  "audiences": {
+    "sectionTitle": "For All Businesses",
+    "sectionSub": "Whether you're a craftsperson, merchant or entrepreneur",
+    "items": [
+      {
+        "t": "💇 Hair Salons & Beauty",
+        "d": "Manage appointments and get paid directly. Zero commission per client."
+      },
+      {
+        "t": "🛍️ E-commerce & Shops",
+        "d": "Sell on WhatsApp, Facebook, Instagram. Automatic invoices and secure payments."
+      },
+      {
+        "t": "🎨 Artisans & Creators",
+        "d": "Showcase your creations, receive orders, get paid without intermediaries."
+      },
+      {
+        "t": "📱 Livestream & Influencers",
+        "d": "Monetize your lives directly. Viewers pay in one click."
+      }
+    ]
+  },
+  "pricing": {
+    "sectionTitle": "Transparent Pricing",
+    "sectionSub": "Zero Commission = More Profit for You",
+    "bestValue": "Best Value",
+    "choose": "Get Started",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "0",
+        "period": "/month",
+        "features": [
+          "Up to 10 payment links/month",
+          "1 social channel (WhatsApp, FB or IG)",
+          "Automatic PDF invoicing",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "29",
+        "period": "/month",
+        "features": [
+          "Unlimited payment links",
+          "All channels (WhatsApp, FB, IG, Email)",
+          "Automatic Invoices & Quotes",
+          "Detailed analytics",
+          "24/7 Priority support",
+          "Multi-country (TN, MA, DZ, AE, etc.)"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "99",
+        "period": "/month",
+        "features": [
+          "Everything in Pro",
+          "Custom API",
+          "CRM Integration",
+          "Advanced Webhooks",
+          "Dedicated Team",
+          "99.9% SLA"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Built for Entrepreneurs",
+    "p1": "AutoCommerce was born from a simple frustration: merchants pay too many commissions and customers abandon complex payments.",
+    "trustTitle": "Trust & Transparency",
+    "trustDesc": "✓ Zero Commission\n✓ PCI-DSS Certifications\n✓ Fernet Encryption\n✓ Secure Webhooks\n✓ 24/7 Support",
+    "p2_pre": "We created a platform where ",
+    "p2_highlights": [
+      "zero commission = more profit",
+      "security is guaranteed",
+      "selling is as simple as sending a message"
+    ],
+    "p2_join": ", where ",
+    "p2_post": "."
+  },
+  "footer": {
+    "tagline": "The zero-commission payment platform for African entrepreneurs.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "productLinks": [
+      "Payment Links",
+      "Invoicing",
+      "Analytics",
+      "API"
+    ],
+    "companyLinks": [
+      "About",
+      "Blog",
+      "Careers",
+      "Contact"
+    ],
+    "legalLinks": [
+      "Terms",
+      "Privacy",
+      "Security",
+      "Cookies"
+    ],
+    "copyright": "© 2024 AutoCommerce. All rights reserved."
+  },
+  "auth": {
+    "title": "AutoCommerce",
+    "subtitle": "AI-Powered WhatsApp Commerce",
+    "login": "Login",
+    "register": "Create Account",
+    "storeName": "Store Name",
+    "storeNamePlaceholder": "My Awesome Store",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "loginBtn": "Sign In",
+    "registerBtn": "Create Account",
+    "loading": "..."
+  },
+  "sidebar": {
+    "role": "Role",
+    "logout": "🚪 Logout"
+  },
+  "nav_items": {
+    "dashboard": "📊 Dashboard",
+    "products": "📦 Products",
+    "appointments": "📅 Appointments",
+    "orders": "🛒 Orders",
+    "conversations": "💬 Conversations",
+    "settings": "⚙️ Settings",
+    "stock_sources": "🔗 Stock Sources",
+    "social_broadcast": "📡 Social Broadcast",
+    "super_admin": "🛡️ Super Admin",
+    "payment_links": "💳 Payment Links",
+    "promotions": "🎯 Promotions",
+    "my_storefront": "🏪 My Storefront",
+    "visual_builder": "🖼️ AI Catalog Builder",
+    "predictive_restocking": "📈 Predictive Restocking",
+    "loyalty_ia": "🎁 Loyalty AI",
+    "b2b_portal": "🏭 B2B Portal",
+    "dashboard_ceo": "👔 CEO Dashboard",
+    "dashboard_commercial": "💼 Commercial Dashboard",
+    "dashboard_ia": "🤖 AI Dashboard"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of your activity",
+    "noData": "No data",
+    "period7d": "7 days",
+    "period30d": "30 days",
+    "period90d": "90 days",
+    "period12m": "12 months",
+    "revenue": "Revenue",
+    "orders": "Orders",
+    "conversations": "Conversations",
+    "products": "Products",
+    "spendingTracker": "💰 Spending Tracker",
+    "spendingSubtitle": "Track your business expenses",
+    "scanInvoice": "📄 Scan Invoice",
+    "add": "+ Add",
+    "budget": "Budget",
+    "spent": "Spent",
+    "remaining": "Remaining",
+    "overBudget": "Over Budget",
+    "editBudget": "Edit",
+    "saveBudget": "Save",
+    "cancelBudget": "Cancel",
+    "aiInsight": "💡 AI Analysis",
+    "refreshInsight": "Refresh",
+    "byCategory": "By Category",
+    "recentExpenses": "Recent Expenses",
+    "noExpenses": "No expenses recorded",
+    "addExpense": "Add Expense",
+    "description": "Description",
+    "category": "Category",
+    "amount": "Amount",
+    "date": "Date",
+    "vendor": "Vendor",
+    "note": "Note",
+    "save": "Save",
+    "cancel": "Cancel",
+    "scanTitle": "Scan an Invoice",
+    "scanDesc": "Upload an image or PDF of your invoice",
+    "scanBtn": "Scan",
+    "scanning": "Analyzing...",
+    "scanError": "Invoice scan error. Check your connection.",
+    "cats": {
+      "supplier": "📦 Suppliers",
+      "fixed": "🏢 Fixed Costs",
+      "marketing": "📢 Marketing",
+      "staff": "👥 Staff",
+      "logistics": "🚚 Logistics",
+      "other": "📦 Other"
+    }
+  },
+  "products": {
+    "title": "Products & Stock",
+    "add": "Add",
+    "newProduct": "New product",
+    "fieldName": "Name *",
+    "fieldPrice": "Price (TND) *",
+    "fieldStock": "Stock *",
+    "fieldCategory": "Category",
+    "fieldImageUrl": "Image URL",
+    "fieldDescription": "Description",
+    "colProduct": "Product",
+    "colCategory": "Category",
+    "colPrice": "Price",
+    "colStock": "Stock",
+    "colEmbedding": "Embedding",
+    "colActions": "Actions",
+    "empty": "No products",
+    "confirmDelete": "Delete this product?",
+    "visionTitle": "AI Vision Test",
+    "visionDesc": "Upload a product image to test AI recognition + stock matching",
+    "visionAnalyzing": "Analyzing...",
+    "visionChoose": "Choose an image",
+    "visionAnalysis": "Vision Analysis",
+    "stockMatch": "Stock Match",
+    "productFound": "Product found",
+    "noMatch": "No matching product",
+    "visionError": "Analysis error"
+  },
+  "orders": {
+    "title": "Orders",
+    "allStatuses": "All statuses",
+    "colId": "#",
+    "colClient": "Client",
+    "colStatus": "Status",
+    "colItems": "Items",
+    "colChannel": "Channel",
+    "colTotal": "Total",
+    "colDate": "Date",
+    "colActions": "Actions",
+    "items": "item(s)",
+    "empty": "No orders",
+    "orderDetail": "Order",
+    "address": "Address",
+    "notes": "Notes",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "paid": "Paid",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    }
+  },
+  "conversations": {
+    "title": "Conversations",
+    "search": "Search...",
+    "empty": "No conversations",
+    "selectPrompt": "Select a conversation",
+    "noMessages": "No messages",
+    "noFSM": "No transitions recorded",
+    "tabMessages": "Messages",
+    "tabFSM": "FSM Log",
+    "send": "Send",
+    "typeMessage": "Type a message...",
+    "searchPlaceholder": "Search for a conversation...",
+    "emptyHint": "Start chatting with your customers on WhatsApp, Instagram, or Facebook."
+  },
+  "settings": {
+    "title": "Settings",
+    "store": "Store",
+    "whatsapp": "WhatsApp",
+    "payments": "Payments",
+    "users": "Users",
+    "agent": "AI Agent",
+    "social": "Social Media",
+    "save": "Save",
+    "cancel": "Cancel",
+    "language": "Language",
+    "langFr": "French",
+    "langAr": "Arabic",
+    "langEn": "English",
+    "langDe": "German"
+  },
+  "appointments": {
+    "title": "Appointments",
+    "noAppointments": "No appointments",
+    "loading": "Loading...",
+    "add": "New Appointment",
+    "client": "Client",
+    "date": "Date",
+    "time": "Time",
+    "service": "Service",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "storefront": {
+    "notFound": "Store not found",
+    "notFoundDesc": "This store does not exist or has been disabled.",
+    "products": "Our Products",
+    "findUs": "Find Us",
+    "call": "Call",
+    "orderWhatsApp": "Order on WhatsApp",
+    "inStock": "In stock",
+    "outOfStock": "Out of stock",
+    "loading": "Loading...",
+    "open": "Open",
+    "closed": "Closed",
+    "close": "Close",
+    "addToCart": "Add to cart",
+    "orderMessage": "Hello, I would like to order"
+  },
+  "superAdmin": {
+    "title": "Super Administration",
+    "tenants": "Tenants",
+    "stats": "Statistics",
+    "loading": "Loading...",
+    "noData": "No data"
+  },
+  "stock": {
+    "title": "Stock Sources",
+    "add": "Add Source",
+    "noSources": "No sources",
+    "loading": "Loading..."
+  },
+  "social": {
+    "title": "Social Broadcast",
+    "publish": "Publish",
+    "schedule": "Schedule",
+    "loading": "Loading..."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "search": "Search",
+    "noData": "No data"
+  },
+  "payment_links": {
+    "title": "Payment Links",
+    "subtitle": "Generate and send secure payment links to your customers",
+    "create": "New link",
+    "create_title": "Create a payment link",
+    "create_subtitle": "The provider will be selected automatically based on your country",
+    "amount": "Amount",
+    "currency": "Currency",
+    "description": "Description",
+    "description_placeholder": "e.g. Order #123, Service fee...",
+    "channel": "Origin channel",
+    "customer_info": "Customer info (optional)",
+    "customer_name": "Customer name",
+    "customer_phone": "Phone",
+    "customer_email": "Customer email",
+    "cancel": "Cancel",
+    "submit": "Create link",
+    "creating": "Creating...",
+    "share": "Share",
+    "send": "Send",
+    "send_title": "Send link",
+    "send_channel": "Send channel",
+    "send_recipient": "Recipient",
+    "send_message": "Message (optional)",
+    "send_message_placeholder": "Custom message (link will be appended automatically)",
+    "send_success": "Link sent successfully!",
+    "send_success_desc": "The customer received the payment link.",
+    "view_link": "View link",
+    "invoice_pdf": "Invoice PDF",
+    "delete": "Delete",
+    "delete_confirm": "Delete this payment link?",
+    "filter_all": "All",
+    "filter_pending": "Pending",
+    "filter_paid": "Paid",
+    "filter_expired": "Expired",
+    "filter_failed": "Failed",
+    "empty_title": "No payment links",
+    "empty_desc": "Create your first payment link and send it to your customers",
+    "stats_paid": "Total paid",
+    "stats_pending": "Pending",
+    "stats_paid_count": "Paid links",
+    "stats_total": "Links created",
+    "refresh": "Refresh",
+    "prev": "Previous",
+    "next": "Next",
+    "page_of": "Page {page} / {total}",
+    "sent_at": "Sent",
+    "paid_at": "Paid",
+    "status_pending": "Pending",
+    "status_paid": "Paid",
+    "status_expired": "Expired",
+    "status_failed": "Failed",
+    "copy_link": "Copy link",
+    "copied": "Link copied to clipboard!",
+    "instagram_copy": "Link copied! Paste it in your Instagram story or message.",
+    "provider_not_configured": "No payment provider configured. Go to Settings.",
+    "error_loading": "Error loading links",
+    "error_creating": "Error creating link",
+    "error_sending": "Error sending link",
+    "error_deleting": "Error deleting link"
+  }
+}

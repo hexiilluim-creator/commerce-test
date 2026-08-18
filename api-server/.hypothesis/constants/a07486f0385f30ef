@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/models/loyalty.py
+# hypothesis_version: 6.131.9
+
+[1.0, 120, 255, 'CASCADE', 'Programme fidélité', 'Règle par défaut', 'SET NULL', 'customer_id', 'idempotency_key', 'loyalty_accounts', 'loyalty_accounts.id', 'loyalty_programs', 'loyalty_rules', 'loyalty_rules.id', 'store_id']

@@ -1,0 +1,12 @@
+{
+  "title": "AutoCommerce Overview",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {"type": "timeseries", "title": "p95 latency /api", "targets": [{"expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{handler=~\"/api.*\"}[5m])) by (le))"}]},
+    {"type": "timeseries", "title": "Taux 5xx", "targets": [{"expr": "sum(rate(http_requests_total{status=~\"5..\"}[5m]))"}]},
+    {"type": "timeseries", "title": "Celery queue backlog", "targets": [{"expr": "sum(celery_queue_depth)"}]},
+    {"type": "timeseries", "title": "Billing webhook", "targets": [{"expr": "billing_webhook_last_success_timestamp_seconds"}]},
+    {"type": "timeseries", "title": "AI conversion", "targets": [{"expr": "sum(rate(autocommerce_llm_calls_total[5m]))"}]}
+  ]
+}

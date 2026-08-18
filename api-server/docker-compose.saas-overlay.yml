@@ -1,0 +1,231 @@
+version: '3.9'
+
+# ── FIX6+FIX7: 1000-tenant production configuration ──────────────────────────
+# Key changes:
+#   - uvicorn: --workers 4 (was 1)
+#   - PgBouncer: connection pooler in front of PostgreSQL (transaction mode)
+#   - worker_critical: billing queue only — fast, never blocked by AI tasks
+#   - worker_realtime: whatsapp + webhook — medium latency
+#   - worker_background: ai + relance — can be slow, low priority
+#   - Flower: Celery monitoring dashboard
+
+services:
+  # ─── API ───────────────────────────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # FIX7: 4 workers (was 1). Formula: 2 × CPU cores. Adjust DB_POOL_SIZE accordingly.
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
+    env_file:
+      - .env.saas-overlay.example
+    environment:
+      # FIX3: connect via PgBouncer (port 6432) — not directly to Postgres
+      DATABASE_URL: postgresql+asyncpg://postgres:${POSTGRES_PASSWORD}@pgbouncer:6432/autocommerce
+      DB_POOL_SIZE: "5"      # low per-process — PgBouncer multiplexes connections
+      DB_MAX_OVERFLOW: "2"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - pgbouncer
+      - redis
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  # ─── Worker: CRITICAL — billing only (priority 9) ─────────────────────────
+  # Never mixed with slow AI tasks — payment webhooks must settle < 2s.
+  worker_critical:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      celery -A services.celery_app.celery_app worker
+      --queues=billing
+      --concurrency=4
+      --prefetch-multiplier=4
+      --loglevel=INFO
+      --hostname=worker-critical@%h
+    env_file:
+      - .env.saas-overlay.example
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:${POSTGRES_PASSWORD}@pgbouncer:6432/autocommerce
+    depends_on:
+      - pgbouncer
+      - redis
+
+  # ─── Worker: REALTIME — whatsapp + social (priority 7) ────────────────────
+  # P0-FIX (audit): unified naming — was 'whatsapp,webhook', now 'whatsapp,social'
+  # matching the canonical queue set in services/celery_app.py and the test
+  # expectations in tests/integration/test_social_reliability.py.
+  worker_realtime:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      celery -A services.celery_app.celery_app worker
+      --queues=whatsapp,social
+      --concurrency=8
+      --prefetch-multiplier=1
+      --loglevel=INFO
+      --hostname=worker-realtime@%h
+    env_file:
+      - .env.saas-overlay.example
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:${POSTGRES_PASSWORD}@pgbouncer:6432/autocommerce
+    depends_on:
+      - pgbouncer
+      - redis
+
+  # ─── Worker: BACKGROUND — ai + embeddings + relance (priority 2-3) ────────
+  # Slow tasks (3-30s). Lower concurrency to avoid OpenAI rate limits.
+  # Scale this pod horizontally when AI load increases.
+  worker_background:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      celery -A services.celery_app.celery_app worker
+      --queues=ai,celery
+      --concurrency=4
+      --prefetch-multiplier=1
+      --loglevel=INFO
+      --hostname=worker-bg@%h
+    env_file:
+      - .env.saas-overlay.example
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:${POSTGRES_PASSWORD}@pgbouncer:6432/autocommerce
+    depends_on:
+      - pgbouncer
+      - redis
+
+  # ─── Celery Beat ──────────────────────────────────────────────────────────
+  celery_beat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      celery -A services.celery_app.celery_app beat
+      --loglevel=INFO
+    env_file:
+      - .env.saas-overlay.example
+    depends_on:
+      - redis
+
+  # ─── Flower (monitoring) ──────────────────────────────────────────────────
+  # P0-FIX (audit): the previously hard-coded weak credentials have been
+  # removed. Credentials are now sourced from env vars FLOWER_BASIC_AUTH_USER
+  # and FLOWER_BASIC_AUTH_PASSWORD (must be set in .env.saas-overlay or via a
+  # secret manager). The container fails fast if they are missing.
+  flower:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command:
+      - sh
+      - -c
+      - >
+        if [ -z "$$FLOWER_BASIC_AUTH_USER" ] || [ -z "$$FLOWER_BASIC_AUTH_PASSWORD" ]; then
+          echo "ERROR: FLOWER_BASIC_AUTH_USER and FLOWER_BASIC_AUTH_PASSWORD must be set" >&2;
+          exit 1;
+        fi;
+        celery -A services.celery_app.celery_app flower
+        --port=5555
+        --basic_auth=$$FLOWER_BASIC_AUTH_USER:$$FLOWER_BASIC_AUTH_PASSWORD
+    env_file:
+      - .env.saas-overlay.example
+    environment:
+      FLOWER_BASIC_AUTH_USER: ${FLOWER_BASIC_AUTH_USER:-}
+      FLOWER_BASIC_AUTH_PASSWORD: ${FLOWER_BASIC_AUTH_PASSWORD:-}
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
+
+  # ─── PgBouncer — connection pooler ────────────────────────────────────────
+  # FIX3+FIX7: PgBouncer in TRANSACTION mode multiplexes N app connections
+  # onto a small pool of real Postgres connections (e.g. 4 workers × 5 pool = 20
+  # app connections → PgBouncer → 20 real Postgres connections max).
+  # This is critical for 1000 tenants: avoids PostgreSQL max_connections exhaustion.
+  pgbouncer:
+    image: bitnami/pgbouncer:1.23.0
+    environment:
+      POSTGRESQL_HOST: db
+      POSTGRESQL_PORT: "5432"
+      POSTGRESQL_DATABASE: autocommerce
+      POSTGRESQL_USERNAME: postgres
+      POSTGRESQL_PASSWORD: postgres
+      PGBOUNCER_DATABASE: autocommerce
+      PGBOUNCER_POOL_MODE: transaction     # critical for SQLAlchemy async
+      PGBOUNCER_MAX_CLIENT_CONN: "500"     # max app connections
+      PGBOUNCER_DEFAULT_POOL_SIZE: "25"    # real Postgres connections
+      PGBOUNCER_MIN_POOL_SIZE: "5"
+      PGBOUNCER_RESERVE_POOL_SIZE: "5"
+      PGBOUNCER_RESERVE_POOL_TIMEOUT: "5"
+      PGBOUNCER_LOG_CONNECTIONS: "0"       # quiet in prod
+      PGBOUNCER_LOG_DISCONNECTIONS: "0"
+    ports:
+      - "6432:6432"
+    depends_on:
+      - db
+    healthcheck:
+      test: ["CMD-SHELL", "psql -h 127.0.0.1 -p 6432 -U postgres -d pgbouncer -c 'SHOW POOLS;' > /dev/null 2>&1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─── PostgreSQL ───────────────────────────────────────────────────────────
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: autocommerce
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      # FIX7: tune Postgres for 1000-tenant workload
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    command: >
+      postgres
+      -c max_connections=100
+      -c shared_buffers=256MB
+      -c effective_cache_size=768MB
+      -c work_mem=4MB
+      -c maintenance_work_mem=64MB
+      -c checkpoint_completion_target=0.9
+      -c wal_buffers=16MB
+      -c random_page_cost=1.1
+      -c effective_io_concurrency=200
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ─── Redis ────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    command: >
+      redis-server
+      --maxmemory 512mb
+      --maxmemory-policy allkeys-lru
+      --save 60 1000
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:
+  redisdata:
+

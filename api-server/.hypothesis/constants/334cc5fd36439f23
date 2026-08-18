@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/dashboard_enterprise.py
+# hypothesis_version: 6.131.9
+
+[0.0, 100.0, 100, 365, '/ai', '/ceo', '/commercial', 'Dashboard Enterprise', 'TND', 'admin', 'angry', 'appointments', 'avg_min', 'avg_order_value_tnd', 'by_status', 'change_pct', 'cnt', 'cold', 'conversations', 'conversion_rate_pct', 'currency', 'current', 'frustrated', 'gross_current_tnd', 'gross_previous_tnd', 'hot', 'human_handoffs', 'lead_label', 'leads', 'mrr_tnd', 'neutral', 'opportunities', 'order_created', 'orders', 'paid_current_tnd', 'paid_previous_tnd', 'period_days', 'pipeline_value_tnd', 'previous', 'recalls_suggested', 'resolution_rate_pct', 'resolutions', 'resolved', 'revenue', 'revenue_paid_tnd', 'satisfaction_score', 'sid', 'since', 'total', 'warm']

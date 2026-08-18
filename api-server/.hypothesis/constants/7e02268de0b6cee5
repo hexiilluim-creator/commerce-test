@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/config.py
+# hypothesis_version: 6.131.9
+
+[3.0, 5.0, 250.0, 100, 120, 200, 300, 587, 600, 900, 1024, 2000, 3600, 8000, 10000, 30000, 400000, 2000000, '*', ',', '.env', '.example', '0', 'CORS_ORIGINS', 'CSRF_SECRET', 'DATABASE_URL', 'DEBUG', 'ENCRYPTION_KEY', 'ENV', 'ENV_FILE', 'HS256', 'INFO', 'S3_ENDPOINT', 'S3_SECRET_KEY', 'SERVER_DOMAIN', 'TIKTOK_ENABLED', 'TIKTOK_VERIFY_TOKEN', 'VERIFY_TOKEN', 'ValidationInfo', 'WHATSAPP_APP_SECRET', 'autocommerce', 'autocommerce-uploads', 'before', 'deepseek', 'development', 'example.com', 'gpt-4o', 'gpt-4o-mini', 'ignore', 'json', 'local', 'localhost', 'mymaster', 'postgres://', 'postgresql://', 'prod', 'production', 'redis://redis:6379/0', 'staging', 'uploads', 'us-east-1', 'utf-8']

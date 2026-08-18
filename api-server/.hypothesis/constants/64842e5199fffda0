@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/loyalty_ia.py
+# hypothesis_version: 6.131.9
+
+[0.0, 120, 200, 404, 1000, 2000, '+00:00', '/churn', '/churn/bulk', '/loyalty-ia', '/models', '/personalize', '/recommend', '/rfm', '/segments', '/simple', 'Modèle introuvable', 'Plan E — Loyalty IA', 'Z', '^#[0-9A-Fa-f]{6}$', 'a_relancer', 'admin', 'at', 'before', 'churn', 'co_occurrence', 'customer_id', 'customers', 'drivers', 'fidele', 'get', 'last_order_days_ago', 'loyalty_ia', 'manager', 'model_version', 'n', 'name', 'orders', 'perdu', 'recommend', 'recommendations', 'results', 'reward', 'rfm', 'rfm_segment', 'risk_band', 'score', 'sku', 'status', 'top_n', 'total', 'total_orders', 'total_spent', 'user_id', 'whatsapp_phone']

@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/pipeline/minimal.py
+# hypothesis_version: 6.131.9
+
+[1000, 1500, 2000, 'acheter', 'address', 'adresse', 'appointment', 'budget', 'buy', 'call me', 'channel', 'channel_account_id', 'closed', 'commander', 'cost', 'default', 'delivery', 'discard', 'discount', 'disponible', 'escalated', 'facebook', 'fsm_state', 'handler', 'instagram', 'livraison', 'manager_agent', 'message_id', 'moins cher', 'nego', 'negotiation', 'negotiation_agent', 'new', 'no_content', 'order', 'planning', 'planning_agent', 'price', 'prix', 'promo', 'qualification', 'qualification_agent', 'rappel', 'rdv', 'reason', 'remise', 'rendez-vous', 'route', 'réduction', 'sales', 'sales_agent', 'schema_version', 'status_event_skip', 'stock', 'store_id', 'tarif', 'tiktok', 'token_estimate', 'truncate_required', 'value', 'verification', 'verification_agent', 'whatsapp']

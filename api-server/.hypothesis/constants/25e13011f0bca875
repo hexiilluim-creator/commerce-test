@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/middleware/rate_limit.py
+# hypothesis_version: 6.131.9
+
+[3.0, 5.0, 429, '1', '120/minute', '9999/minute', 'DISABLE_RATE_LIMIT', 'ENV', 'PYTEST_CURRENT_TEST', 'REDIS_RATELIMIT_URL', 'REDIS_SOCKET_TIMEOUT', 'RateLimitExceeded', 'Retry-After', 'SKIP_LIMITER', 'SlowAPIMiddleware', 'X-Store-Id', 'limiter', 'memory://', 'prod', 'production', 'pytest', 'staging', 'store_id', 'tenant_rate_limit', 'test', 'unknown']

@@ -1,0 +1,95 @@
+    # AutoCommerce Enterprise V27.1 — TLS reverse proxy production
+    user nginx;
+    worker_processes auto;
+    error_log /var/log/nginx/error.log warn;
+    pid /var/run/nginx.pid;
+
+    events { worker_connections 1024; }
+
+    http {
+        include /etc/nginx/mime.types;
+        default_type application/octet-stream;
+
+        upstream api_backend {
+            server api:8000;
+            keepalive 32;
+        }
+
+        upstream frontend_backend {
+            server frontend:80;
+            keepalive 16;
+        }
+
+        server {
+            listen 80;
+            server_name _;
+            location /.well-known/acme-challenge/ { root /var/www/certbot; }
+            location /nginx-health { access_log off; return 200 'ok
+'; add_header Content-Type text/plain; }
+            return 301 https://$host$request_uri;
+        }
+
+        server {
+            listen 443 ssl http2;
+            server_name _;
+
+            ssl_certificate /etc/nginx/certs/live/fullchain.pem;
+            ssl_certificate_key /etc/nginx/certs/live/privkey.pem;
+            ssl_protocols TLSv1.3;
+            ssl_prefer_server_ciphers off;
+            ssl_session_timeout 1d;
+            ssl_session_cache shared:SSL:10m;
+            ssl_session_tickets off;
+            ssl_stapling on;
+            ssl_stapling_verify on;
+            resolver 1.1.1.1 1.0.0.1 valid=300s ipv6=off;
+            resolver_timeout 5s;
+
+            add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" always;
+            add_header X-Content-Type-Options "nosniff" always;
+            add_header X-Frame-Options "DENY" always;
+            add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+            add_header Cross-Origin-Opener-Policy "same-origin" always;
+            add_header Cross-Origin-Embedder-Policy "require-corp" always;
+            add_header Cross-Origin-Resource-Policy "same-origin" always;
+            add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https: wss:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests" always;
+
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto https;
+
+            location /api/v1/agent/ {
+                ssl_verify_client optional;
+                ssl_client_certificate /etc/nginx/certs/client_ca.pem;
+                proxy_set_header X-Client-Cert-Verified $ssl_client_verify;
+                proxy_set_header X-Client-DN $ssl_client_s_dn;
+                proxy_pass http://api_backend;
+                client_max_body_size 15M;
+            }
+
+            location /api/ {
+                proxy_pass http://api_backend;
+                proxy_http_version 1.1;
+                proxy_set_header Connection "";
+                client_max_body_size 15M;
+                proxy_connect_timeout 10s;
+                proxy_send_timeout 60s;
+                proxy_read_timeout 60s;
+            }
+
+            location /ws/ {
+                proxy_pass http://api_backend;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_read_timeout 3600s;
+            }
+
+            location / {
+                proxy_pass http://frontend_backend;
+                proxy_http_version 1.1;
+                proxy_set_header Connection "";
+            }
+        }
+    }

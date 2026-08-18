@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/_deps.py
+# hypothesis_version: 6.131.9
+
+[403, 'admin', 'jwt_payload', 'manager', 'role', 'super_admin', 'viewer']

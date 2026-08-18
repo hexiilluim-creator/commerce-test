@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/payment_router.py
+# hypothesis_version: 6.131.9
+
+['+1', '+20', '+212', '+213', '+216', '+33', '+44', '+966', '+971', '-', '0020', '00212', '00213', '00216', '0033', '0044', '00966', '00971', 'AE', 'AED', 'DZ', 'DZD', 'EG', 'EGP', 'EUR', 'FR', 'GB', 'GBP', 'MA', 'MAD', 'SA', 'SAR', 'Store introuvable', 'TN', 'TND', 'US', 'USD', 'aliapay', 'amount', 'cash', 'cib', 'clix', 'cmi', 'completed', 'created', 'currency', 'description', 'error', 'flouci', 'konnect', 'ok', 'order_id', 'paid', 'payment_ref', 'payment_router', 'payment_url', 'paypal', 'provider', 'ref', 'return_url', 'status', 'store_id', 'stripe', 'success', 'tnpay', 'transaction_id', 'unknown']

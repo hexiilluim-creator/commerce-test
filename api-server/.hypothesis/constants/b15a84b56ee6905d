@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/predictive_restocking.py
+# hypothesis_version: 6.131.9
+
+[100, 120, 180, 404, 409, 500, 730, 1000, 2000, '/alert', '/alerts', '/forecast', '/forecasts', '/restocking', '/seasonality', '/seed-demo', '/suggest', '/suggestions', 'DEMO-001', 'admin', 'daily', 'get', 'horizon_days', 'lower', 'manager', 'model_version', 'restocking', 'sku', 'stockout', 'upper', 'user_id']

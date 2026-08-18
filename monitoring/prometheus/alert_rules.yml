@@ -1,0 +1,31 @@
+groups:
+  - name: autocommerce-enterprise
+    rules:
+      - alert: AutoCommerceHighTokensPerMinute
+        expr: sum(rate(autocommerce_prompt_tokens_total[1m]) + rate(autocommerce_completion_tokens_total[1m])) by (tenant) > 20000
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: High LLM token throughput for tenant {{ $labels.tenant }}
+      - alert: AutoCommerceDailyCostBudgetExceeded
+        expr: sum(increase(autocommerce_llm_cost_usd_total[24h])) by (tenant) > 100
+        for: 15m
+        labels:
+          severity: critical
+        annotations:
+          summary: Daily LLM cost budget exceeded for tenant {{ $labels.tenant }}
+      - alert: AutoCommerceQueueBacklog
+        expr: autocommerce_message_queue_length{queue=~"whatsapp|social|ai"} > 1000
+        for: 10m
+        labels:
+          severity: critical
+        annotations:
+          summary: Queue backlog high on {{ $labels.queue }}
+      - alert: AutoCommerceCertificateExpiry7d
+        expr: probe_ssl_earliest_cert_expiry - time() < 7 * 24 * 3600
+        for: 30m
+        labels:
+          severity: critical
+        annotations:
+          summary: TLS certificate expires in less than 7 days

@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/bloc10.py
+# hypothesis_version: 6.131.9
+
+[0.0, 0.3, 0.4, 0.5, 0.6, 150, 200, 300, 1000, '_call_manager_agent', '_call_planning_agent', '_call_sales_agent', '_store', 'channel', 'circuit_open', 'content', 'credits_exhausted', 'flag_disabled', 'fsm_state', 'latency_ms', 'max_discount_pct', 'omnicall_v9.bloc10', 'provider_msg_id', 'role', 'route', 'send_success', 'store_id', 'user', 'v9.manager', 'v9.negotiation', 'v9.planning', 'v9.qualification', 'v9.sales', 'v9.verification']

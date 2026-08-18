@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/utils/facebook_client.py
+# hypothesis_version: 6.131.9
+
+[15.0, 20.0, 30.0, 200, 500, '?', 'Authorization', 'CANCEL', 'CONFIRM_ORDER', 'Content-Type', 'RESPONSE', 'SEE_ALTERNATIVES', '_', 'access_token', 'application/json', 'attachment', 'buttons', 'content_type', 'elements', 'error', 'facebook', 'facebook_page_id', 'facebook_token_enc', 'failed', 'generic', 'id', 'image_url', 'link', 'mark_seen', 'message', 'messaging_type', 'network', 'not_configured', 'ok', 'payload', 'post_id', 'postback', 'quick_replies', 'recipient', 'sender_action', 'sent', 'subtitle', 'template', 'template_type', 'text', 'title', 'type', 'url', '✅ Commander', '❌ Annuler', '🔄 Alternatives']

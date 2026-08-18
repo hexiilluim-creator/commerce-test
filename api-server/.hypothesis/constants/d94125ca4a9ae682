@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/orders.py
+# hypothesis_version: 6.131.9
+
+[100, 403, 404, 10000, '/', '/cursor', '/export', '/orders', '/{order_id}', '/{order_id}/status', 'Content-Disposition', 'EUR', 'Order not found', 'Orders', 'Store not found', 'TN', 'TND', 'X-Truncated', 'X-Truncated-At', 'X-Warning', 'before', 'channel', 'country_code', 'created_at', 'currency', 'customer_id', 'delivery_address', 'delivery_name', 'direct', 'discount_amount', 'has_more', 'id', 'items', 'items_count', 'manager', 'manual', 'name', 'next_cursor', 'notes', 'page', 'pages', 'path', 'payment_provider', 'product_id', 'promotion_breakdown', 'promotion_codes', 'qty', 'quantity', 'status', 'subtotal_amount', 'tax_amount', 'tax_breakdown', 'text/csv', 'total', 'total_amount', 'true', 'unit_price', 'updated_at', 'url', 'value']

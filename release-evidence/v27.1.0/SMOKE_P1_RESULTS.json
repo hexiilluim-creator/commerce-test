@@ -1,0 +1,145 @@
+{
+  "tests": [
+    {
+      "name": "no_threadpool_misuse",
+      "ok": true,
+      "detail": "0 mention(s); acceptable=True"
+    },
+    {
+      "name": "no_duplicate_celery_tasks",
+      "ok": true,
+      "detail": "duplicates={}"
+    },
+    {
+      "name": "webhook_idempotency_first_claim",
+      "ok": true,
+      "detail": "first=True"
+    },
+    {
+      "name": "webhook_idempotency_second_blocked",
+      "ok": true,
+      "detail": "second=False"
+    },
+    {
+      "name": "store_resolver_cache_hit",
+      "ok": true,
+      "detail": "store_id=7, latency_ms=0.059 (must be <5ms)"
+    },
+    {
+      "name": "tiktok_disabled_by_default",
+      "ok": true,
+      "detail": "TIKTOK_ENABLED=False"
+    },
+    {
+      "name": "tiktok_real_calls_off_by_default",
+      "ok": true,
+      "detail": "TIKTOK_ALLOW_REAL_CALLS=False"
+    },
+    {
+      "name": "tiktok_separate_verify_token",
+      "ok": true,
+      "detail": "distinct: True"
+    },
+    {
+      "name": "retry_with_backoff_present",
+      "ok": true,
+      "detail": "_retry_with_backoff() defined"
+    },
+    {
+      "name": "celery_dlq_routing",
+      "ok": true,
+      "detail": "_route_to_dlq() defined"
+    },
+    {
+      "name": "dlq_queues_declared",
+      "ok": true,
+      "detail": "queues=['<unbound Queue celery -> <unbound Exchange celery(direct)> -> celery>', '<unbound Queue whatsapp -> <unbound Exchange whatsapp(direct)> -> whatsapp>', '<unbound Queue social -> <unbound Exchange social(direct)> -> social>', '<unbound Queue ai -> <unbound Exchange ai(direct)> -> ai>', '<unbo"
+    },
+    {
+      "name": "dlq_annotated_tasks",
+      "ok": true,
+      "detail": "4 tasks annotated for DLQ"
+    },
+    {
+      "name": "retry_policy_present",
+      "ok": true,
+      "detail": "policy={'max_retries': 5, 'interval_start': 0, 'interval_step': 5, 'interval_max': 120}"
+    },
+    {
+      "name": "metric:webhook_events_total",
+      "ok": true,
+      "detail": "exposed"
+    },
+    {
+      "name": "metric:webhook_processing_duration_seconds",
+      "ok": true,
+      "detail": "exposed"
+    },
+    {
+      "name": "metric:webhook_inflight",
+      "ok": true,
+      "detail": "exposed"
+    },
+    {
+      "name": "metric:webhook_dedup_hits_total",
+      "ok": true,
+      "detail": "exposed"
+    },
+    {
+      "name": "metric:store_resolver_lookups_total",
+      "ok": true,
+      "detail": "exposed"
+    },
+    {
+      "name": "metric:webhook_dlq_pushed_total",
+      "ok": true,
+      "detail": "exposed"
+    },
+    {
+      "name": "metric:celery_task_retries",
+      "ok": true,
+      "detail": "exposed"
+    },
+    {
+      "name": "metric:celery_task_failures",
+      "ok": true,
+      "detail": "exposed"
+    },
+    {
+      "name": "scrape:autocommerce_webhook_events_total",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "name": "scrape:autocommerce_webhook_processing_duration_seconds",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "name": "scrape:autocommerce_webhook_dedup_hits_total",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "name": "scrape:autocommerce_store_resolver_lookups_total",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "name": "latency_p99_under_50ms",
+      "ok": true,
+      "detail": "p99=5.28ms"
+    }
+  ],
+  "latency": {
+    "p50_ms": 2.575,
+    "p95_ms": 3.983,
+    "p99_ms": 5.278,
+    "samples": 200
+  },
+  "summary": {
+    "passed": 26,
+    "total": 26,
+    "ok": true
+  }
+}

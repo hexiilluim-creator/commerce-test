@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/middleware/auth.py
+# hypothesis_version: 6.131.9
+
+[10.0, 'X-Internal-Token', 'get_current_store', 'get_current_store_id', 'store_id', 'unknown']

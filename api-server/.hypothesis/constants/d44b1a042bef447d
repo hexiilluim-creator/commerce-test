@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/payments.py
+# hypothesis_version: 6.131.9
+
+[400, 401, 404, 500, 172800, '/intent', '/payments', '/webhook/clix', '/webhook/flouci', '/webhook/paymee', '/webhook/tnpay', 'Authorization', 'Invalid JSON body', 'Invalid order_id', 'No tenant context', 'Order not found', 'Payments', 'REDACTED', 'X-Clix-Signature', 'X-Clix-Token', 'X-Flouci-Signature', 'X-TnPay-Token', 'amount', 'api_key', 'bearer ', 'cash', 'check_sum', 'clix', 'duplicate_ignored', 'enc_', 'event_id', 'failed', 'flouci', 'id', 'order_id', 'paymee', 'payment_status', 'payment_webhook', 'payments.dlq', 'queued', 'reference', 'rejected', 'replayed', 'secret_key', 'status', 'tnpay', 'token', 'transaction_id', 'utf-8', 'validated', 'webhook_token']

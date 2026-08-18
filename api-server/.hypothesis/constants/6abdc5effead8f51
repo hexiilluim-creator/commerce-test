@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/middleware/input_validation.py
+# hypothesis_version: 6.131.9
+
+[200, 400, 403, 415, '\x00', '%00', '/health', '/metrics', ';', 'Forbidden', 'Invalid request path', 'PATCH', 'POST', 'PUT', 'allowed', 'application/json', 'content-type', 'error', 'input_validation', 'invalid_content_type', 'multipart/form-data', 'null_byte_injection', 'path', 'path_traversal', 'query_string', 'sql_injection', 'text/plain', 'unknown', 'user-agent', 'x-forwarded-for', 'x-forwarded-host', 'x-real-ip', 'xss']

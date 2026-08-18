@@ -1,0 +1,164 @@
+# SÉCURITÉ : Ce compose utilise .env.prod généré côté serveur.
+# Ne jamais committer .env.prod. Utiliser .env.prod.example comme template.
+# Vérification : bash scripts/release_gate.sh
+#
+
+# ════════════════════════════════════════════════════════════════════════════
+# AutoCommerce V25 — docker-compose.yml (dev / all-in-one)
+# ════════════════════════════════════════════════════════════════════════════
+#
+# Usage:
+#   1. Générer le .env: bash scripts/generate_secrets.sh > .env.prod
+#   2. Compléter .env.prod (voir .env.prod.example) — NE JAMAIS committer .env.prod
+#   3. Démarrer: docker-compose up -d
+#
+# Note d'architecture:
+#   - Ce compose reste le mode dev / all-in-one : un conteneur Node construit ./autocommerce-app/dist
+#     puis le Nginx racine sert ce dist avec ./nginx.conf.
+#   - Le Dockerfile autonome ./autocommerce-app/Dockerfile est l'artefact frontend standalone
+#     destiné aux déploiements blue/green containerisés (registry / Kubernetes / VM containerisée).
+#   4. Migrations + seed (1ère fois seulement):
+#      docker-compose exec api python3 -m alembic upgrade heads
+#      docker-compose exec api python3 seed_production.py
+#
+# ════════════════════════════════════════════════════════════════════════════
+
+version: "3.9"
+
+services:
+
+  # ── PostgreSQL ──────────────────────────────────────────────────────────────
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: autocommerce_postgres
+    restart: unless-stopped
+    # env_file — utiliser .env.prod généré côté serveur (jamais committé)
+    env_file:
+      - ./.env.prod
+    environment:
+      POSTGRES_USER: autocommerce
+      POSTGRES_DB: autocommerce
+      # POSTGRES_PASSWORD est lu depuis le fichier .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U autocommerce"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Redis ───────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: autocommerce_redis
+    restart: unless-stopped
+    command: redis-server --maxmemory 512mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    ports:
+      - "127.0.0.1:6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # ── API Backend ─────────────────────────────────────────────────────────────
+  api:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+    container_name: autocommerce_api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    # env_file — utiliser .env.prod généré côté serveur (jamais committé)
+    env_file:
+      - ./.env.prod
+    environment:
+      # On surcharge DATABASE_URL pour utiliser le nom du service Docker 'postgres'
+      # On utilise POSTGRES_PASSWORD défini dans le .env pour reconstruire l'URL si nécessaire,
+      # mais idéalement le script de génération devrait déjà mettre l'URL correcte.
+      # Ici on force l'usage de l'hôte 'postgres' au lieu de 'localhost'.
+      DATABASE_URL: postgresql+asyncpg://autocommerce:${POSTGRES_PASSWORD}@postgres:5432/autocommerce
+      REDIS_URL: redis://redis:6379/0
+      REDIS_RATELIMIT_URL: redis://redis:6379/1
+      REDIS_CACHE_URL: redis://redis:6379/2
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - uploads_data:/app/uploads
+      - logs_data:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 5
+
+  # ── Celery Worker ───────────────────────────────────────────────────────────
+  celery:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+    container_name: autocommerce_celery
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    # env_file — utiliser .env.prod généré côté serveur (jamais committé)
+    env_file:
+      - ./.env.prod
+    environment:
+      DATABASE_URL: postgresql+asyncpg://autocommerce:${POSTGRES_PASSWORD}@postgres:5432/autocommerce
+      REDIS_URL: redis://redis:6379/0
+    command: python3 -m celery -A services.celery_app worker
+      --loglevel=info
+      --queues=celery,whatsapp,social,ai,billing,payments
+      --concurrency=4
+      --max-tasks-per-child=200
+    volumes:
+      - uploads_data:/app/uploads
+
+  # ── Frontend (mode compose dev/all-in-one : build unique → dist/ servi par Nginx racine) ──
+  frontend:
+    image: node:20-alpine
+    container_name: autocommerce_frontend_build
+    working_dir: /app
+    volumes:
+      - ./autocommerce-app:/app
+    environment:
+      NODE_ENV: production
+      VITE_API_URL: ""
+    command: sh -c "npm ci --legacy-peer-deps && npm run build"
+    restart: "no"
+
+  # ── Nginx Reverse Proxy (sert dist/public produit par le service frontend) ───
+  nginx:
+    image: nginx:alpine
+    container_name: autocommerce_nginx
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_started
+      frontend:
+        condition: service_completed_successfully
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./autocommerce-app/dist/public:/usr/share/nginx/html:ro
+
+volumes:
+  postgres_data:
+  redis_data:
+  uploads_data:
+  logs_data:
+  backups_data:

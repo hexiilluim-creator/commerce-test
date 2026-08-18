@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/models/visual_builder.py
+# hypothesis_version: 6.131.9
+
+[140, 255, 320, 1024, 'CASCADE', 'VisualBuildAsset', 'VisualBuildReview', 'all, delete-orphan', 'approved', 'build', 'build_id', 'changes_requested', 'draft', 'fr', 'locale_default', 'pending', 'pending_review', 'photo', 'product_id', 'published', 'rejected', 'status', 'store_id', 'visual_build_assets', 'visual_build_history', 'visual_build_reviews', 'visual_build_status', 'visual_builds', 'visual_builds.id']

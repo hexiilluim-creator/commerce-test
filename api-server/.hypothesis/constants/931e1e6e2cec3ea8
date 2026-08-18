@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/observability/context.py
+# hypothesis_version: 6.131.9
+
+['channel', 'message_id', 'message_kind', 'schema_version', 'store_id', 'trace_id']

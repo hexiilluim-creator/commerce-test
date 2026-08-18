@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/knowledge_loop.py
+# hypothesis_version: 6.131.9
+
+[0.0, 0.1, 0.5, 0.7, 1.0, 100, 10000, ',', 'action', 'applied_at', 'applied_by', 'avg_score', 'bad_upsell', 'conversion', 'conversion_rate', 'count', 'created_at', 'description', 'focus', 'good_upsell', 'has_enough_data', 'has_improvements', 'helpful', 'high', 'improvements', 'improvements_count', 'info', 'interaction_id', 'knowledge_loop', 'low', 'medium', 'metadata', 'no_conversion', 'off_topic', 'period_days', 'positive_rate', 'priority', 'prompt_tone', 'response_length', 'score', 'sid', 'since', 'store_id', 'system', 'tag', 'tags', 'tone_bad', 'tone_good', 'too_long', 'too_short', 'top_tags', 'total_interactions', 'type', 'unhelpful', 'version', 'wrong_price', 'wrong_product']

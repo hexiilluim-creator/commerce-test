@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/utils/instagram_client.py
+# hypothesis_version: 6.131.9
+
+[15.0, 20.0, '?', 'Authorization', 'Content-Type', 'RESPONSE', 'STORIES', '_', 'access_token', 'application/json', 'caption', 'content_type', 'creation_id', 'error', 'id', 'image_url', 'instagram', 'instagram_account_id', 'instagram_token_enc', 'mark_seen', 'media_type', 'message', 'messaging_type', 'network', 'not_configured', 'ok', 'payload', 'post_id', 'quick_replies', 'recipient', 'sender_action', 'story_id', 'text', 'title']

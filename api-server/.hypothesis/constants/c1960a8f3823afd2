@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/appointments.py
+# hypothesis_version: 6.131.9
+
+[200, 201, 204, 400, 404, '%H:%M', '%Y-%m-%d', '/', '/appointments', '/availability', '/config', '/services', '/slots', '/{appointment_id}', 'Africa/Tunis', 'Date ISO YYYY-MM-DD', 'RDV introuvable', 'Règle introuvable', 'Service introuvable', 'address', 'appointments', 'business_type', 'count', 'created_at', 'customer_id', 'date', 'day_of_week', 'description', 'duration_min', 'ecommerce', 'end_time', 'fr', 'id', 'is_active', 'name', 'notes', 'ok', 'operation failed: %s', 'patient_name', 'price', 'reminder_sent', 'scheduled_at', 'scheduled_date', 'scheduled_time', 'service_category', 'service_id', 'slots', 'start_time', 'status', 'store_id']

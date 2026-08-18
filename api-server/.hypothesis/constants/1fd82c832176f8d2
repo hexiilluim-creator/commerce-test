@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/middleware/security_headers.py
+# hypothesis_version: 6.131.9
+
+["'self'", ',', '/', '/api/v1/admin', '/api/v1/auth', '/api/v1/billing', '/api/v1/security', '/api/v1/stores', '/api/v1/users', '0', '1; mode=block', '://', ';', '; ', 'CORS_ORIGINS', 'Cache-Control', 'DENY', 'Expires', 'HSTS_ENABLED', 'Permissions-Policy', 'Pragma', 'Referrer-Policy', 'SERVER_DOMAIN', 'X-CSP-Nonce', 'X-Frame-Options', 'X-XSS-Protection', "base-uri 'self'", "default-src 'self'", "form-action 'self'", 'http://', 'https', 'https:', 'https://', 'no-cache', 'none', 'nosniff', "object-src 'none'", 'require-corp', 'same-origin', 'server', 'ws://', 'wss:', 'wss://', 'x-powered-by']

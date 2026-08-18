@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/payment_link_ai_tool.py
+# hypothesis_version: 6.131.9
+
+['/', 'error', 'invoice_number', 'payment_link_id', 'pending', 'success', 'url', 'whatsapp']

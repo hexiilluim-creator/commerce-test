@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/store_resolver.py
+# hypothesis_version: 6.131.9
+
+[300.0, 300, 1000, 'db', 'hit', 'local', 'miss', 'null', 'redis', 'store_resolver', 'store_resolver:']

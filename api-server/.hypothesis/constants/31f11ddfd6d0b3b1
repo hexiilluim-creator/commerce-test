@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/structured_agent.py
+# hypothesis_version: 6.131.9
+
+[0.05, 5.0, 100, 150, 300, 7200, '...', '0', '1', '2', '3', 'INIT', 'browsing', 'channel', 'commande', 'conseiller', 'content', 'customer_id', 'customer_not_found', 'darija', 'detected_language', 'emotion', 'fr', 'frustrated', 'fsm_state', 'greeting', 'hesitant', 'idle', 'intent', 'interested', 'keywords', 'last_emotion', 'last_lang', 'last_order_id', 'main_menu', 'message', 'name', 'non', 'operation failed: %s', 'order_confirmation', 'order_status', 'other', 'oui', 'preferences', 'product_id', 'product_query', 'product_search', 'produit', 'qty', 'reason', 'relanced_at', 'reply', 'role', 'selected_product_id', 'store_not_found', 'structured_agent', 'success', 'system', 'talk_to_human', 'timeout', 'unit_price', 'urgent', 'url', 'user', 'whatsapp', '✅', '❌']

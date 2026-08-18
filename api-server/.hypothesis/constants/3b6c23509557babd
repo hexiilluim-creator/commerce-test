@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/b2b_portal.py
+# hypothesis_version: 6.131.9
+
+[255, 365, 400, 500, 100000, '/accounts', '/b2b', '/dashboard', '/invoices', '/invoices/grouped', '/orders', '/pricing/quote', 'EUR', 'Plan F — B2B Portal', 'admin', 'applied_rule_id', 'applied_rule_type', 'b2b_portal', 'base_unit_price', 'buyer', 'contract_code', 'deferred', 'discount_amount', 'explanation', 'final_unit_price', 'garage', 'manager', 'user_id', 'viewer']

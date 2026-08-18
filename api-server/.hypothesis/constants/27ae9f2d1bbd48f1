@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/omnicall_v9_admin.py
+# hypothesis_version: 6.131.9
+
+['/flags', '/omnicall-v9', '/report', '/report/reset', '/status', '0', 'CLOSED (Safe)', 'OMNICALL_V9_ENABLED', 'OmniCall V9 Admin', 'admin', 'beta_stores', 'circuit_breaker', 'dual_read', 'enabled', 'flags', 'guide', 'is_safe', 'observer', 'promotion_readiness', 'reset_successful', 'rollback', 'rollout', 'rollout_pct', 'shadow_mode', 'status', 'step_1', 'step_2', 'step_3', 'super_admin']

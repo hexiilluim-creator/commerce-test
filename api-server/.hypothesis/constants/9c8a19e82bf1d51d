@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/facture_signature.py
+# hypothesis_version: 6.131.9
+
+[b'\x02\x01\x01', b'\x02\x08', b'\x17\r', b'\x18\x0f', b'%PDF', b'0', b'010\r\x06\t`\x86H\x01e\x03\x04\x02\x01\x05\x00\x04 ', b'0A', b'\x81', b'\x82', b'\xa0\n\x06\x08*\x86H\x86\xf7\r\x01\t\x0f', 0.4, 2.835, 7.0, 42.0, 595.27, 841.89, 128, 200, 256, 2048, 65537, '#666666', '%Y%m%d%H%M%S', '%y%m%d%H%M%S', ',', '.pdf', '.png', ':', '; ', '>H', 'Content-Type', 'Helvetica', 'Horodatage [%s]: %s', 'PDF signé écrit: %s', 'PNG', 'SHA-256: %s', 'SIGNING_KEY_PEM', 'TN', 'TSA_URL', '__main__', '_signed', 'ascii', 'black', 'certificate_pem', 'details', 'ignore', 'invoice', 'invoice_number', 'local_fallback', 'milliseconds', 'pdf_path', 'qr_data', 'sha256', 'sha256_hash', 'sha256_match', 'sign', 'signature_hex', 'signature_valid', 'signed_pdf_path', 'timestamp', 'timestamp_source', 'timestamp_utc', 'tsa', 'unknown', 'valid', 'verify', 'white']

@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/product_images.py
+# hypothesis_version: 6.131.9
+
+[400, 403, 404, 500, 1024, '/products', '/{product_id}/images', 'Access denied', 'Invalid image index', 'Product not found', 'Store not found', 'Upload failed', 'features_json', 'image', 'image_count', 'image_index', 'images', 'legacy_image_url', 'product_id', 'product_images', 'quota', 'storage_backend', 'storage_key', 'store_id', 'url']

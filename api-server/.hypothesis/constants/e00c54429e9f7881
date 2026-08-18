@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/internal_ops.py
+# hypothesis_version: 6.131.9
+
+[403, 503, '/_internal', '/email/health', '/jwt/rotate', 'Internal Ops', 'SMTP unavailable', 'X-Internal-Token', 'internal_api', 'ok', 'smtp_host', 'smtp_port', 'state', 'status']

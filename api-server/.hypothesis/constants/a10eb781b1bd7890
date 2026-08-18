@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/types/unified_message.py
+# hypothesis_version: 6.131.9
+
+['audio', 'button', 'document', 'facebook', 'image', 'inbound', 'instagram', 'interactive', 'list', 'location', 'outbound', 'quick_reply', 'status', 'text', 'tiktok', 'unknown', 'v9.3', 'video', 'whatsapp']

@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/utils/tiktok_client.py
+# hypothesis_version: 6.131.9
+
+[15.0, 20.0, 30.0, 150, '?', 'Access-Token', 'Content-Type', 'DIRECT_POST', 'IMAGE', 'PHOTO', 'PUBLIC_TO_EVERYONE', 'PULL_FROM_URL', 'PYTEST_CURRENT_TEST', 'TEXT', 'application/json', 'code', 'content', 'data', 'disable_comment', 'disabled', 'dry_run', 'error', 'id', 'image_url', 'media_type', 'message', 'message_type', 'network', 'not_configured', 'ok', 'payload', 'photo_cover_index', 'photo_images', 'post_info', 'post_mode', 'privacy_level', 'production', 'publish_id', 'source', 'source_info', 'status', 'text', 'tiktok', 'tiktok_open_id', 'tiktok_token_enc', 'title', 'to_user_open_id', 'video_url']

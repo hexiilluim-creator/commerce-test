@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/normalizers/instagram.py
+# hypothesis_version: 6.131.9
+
+['attachments', 'body', 'display_name', 'event_at', 'id', 'image', 'instagram_account_id', 'message_id', 'message_kind', 'metadata', 'recipient', 'recipient_id', 'sender', 'sender_id', 'store_id', 'tenant_ref', 'text', 'timestamp', 'trace_id', 'type', 'username']

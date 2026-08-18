@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/social_agent.py
+# hypothesis_version: 6.131.9
+
+['0', 'channel', 'dropped', 'error', 'facebook', 'fr', 'fsm_state', 'idle', 'image', 'instagram', 'ok', 'reason', 'received_no_vision', 'reply', 'status', 'store_not_found', 'text', 'tiktok']

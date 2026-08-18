@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/tax.py
+# hypothesis_version: 6.131.9
+
+[100, 201, 255, 400, 404, '/exemptions', '/migrate-legacy', '/preview', '/rates', '/tax', 'Store introuvable', 'TVA', 'Tax', 'country_code', 'created', 'customer_email', 'customer_phone', 'id', 'is_active', 'is_exempt', 'is_zero_rate', 'items', 'legal_reference', 'name', 'priority', 'product_category', 'rate', 'reason', 'status', 'store_id', 'tax', 'valid_from', 'valid_to']

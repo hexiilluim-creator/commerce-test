@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/redis_lock.py
+# hypothesis_version: 6.131.9
+
+[3.0, 5.0, '1', 'REDIS_SOCKET_TIMEOUT', 'omnicall:lock:']

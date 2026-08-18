@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/senders/whatsapp.py
+# hypothesis_version: 6.131.9
+
+[1.0, 1000, '****', 'attempt', 'error', 'id', 'kind', 'latency_ms', 'list', 'max_retries', 'messages', 'provider_msg_id', 'recipient', 'store_id']

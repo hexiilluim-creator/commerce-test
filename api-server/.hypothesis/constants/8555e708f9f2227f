@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/social_webhooks.py
+# hypothesis_version: 6.131.9
+
+[0.0, 200, 400, 401, 403, 503, 1000, '/facebook/webhook', '/instagram/webhook', '/social', '/tiktok/webhook', '/webhook', 'Invalid JSON', 'Social Webhooks', 'TIKTOK_VERIFY_TOKEN', 'X-Hub-Signature-256', 'X-TikTok-Signature', 'attachment_id', 'attachments', 'body', 'business_account_id', 'caption', 'content', 'disabled', 'duplicate', 'duplicate_delivery', 'entry', 'error', 'facebook', 'failed', 'hub.challenge', 'hub.mode', 'hub.verify_token', 'id', 'ignore', 'image', 'instagram', 'invalid_json', 'media_id', 'message', 'message_id', 'messaging', 'mid', 'mime_type', 'ok', 'open_id', 'payload', 'queued', 'raw', 'received', 'recipient', 'recipient_id', 'rejected', 'replayed', 'sender', 'sender_id', 'sha256=', 'social.dlq', 'social_webhook', 'status', 'subscribe', 'success', 'text', 'tiktok', 'title', 'type', 'unsigned', 'url', 'validated']

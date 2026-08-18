@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/credit_ledger.py
+# hypothesis_version: 6.131.9
+
+[25.0, 80.0, 175.0, 300.0, 100, 200, 500, 999, 1000, 2000, 5000, 10000, 20000, '1000 crédits IA', '200 crédits IA', '50 crédits IA', '500 crédits IA', 'active', 'balance_after', 'bonus', 'business', 'business_500', 'created_at', 'credits', 'credits_added', 'credits_allocated', 'credits_delta', 'credits_granted', 'credits_remaining', 'credits_used', 'delta', 'desc', 'description', 'detail', 'enterprise', 'enterprise_1k', 'error', 'event_type', 'free', 'growth_200', 'label', 'lim', 'limit', 'migration_required', 'monthly_alloc', 'new_balance', 'now', 'ok', 'pack', 'pack_id', 'plan', 'plan_code', 'premium', 'price_dt', 'pro', 'pro_whatsapp', 'ref', 'reset_date', 'sid', 'starter', 'starter_50', 'store_id', 'store_id manquant', 'store_not_found', 'subscription', 'top_up']

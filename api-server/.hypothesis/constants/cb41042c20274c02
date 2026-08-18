@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/manager_agent.py
+# hypothesis_version: 6.131.9
+
+[0.0, 1000, 2000, '?', 'Réponse None', 'active', 'arnaque', 'avg_latency_ms', 'avocat', 'blocked', 'channel', 'commerce_agent', 'customer', 'degraded_mode', 'erreur', 'escalation', 'escalation_rate', 'fraud', 'humain', 'human_escalation', 'id', 'last_call_at', 'manager', 'manager_agent', 'problème grave', 'remboursement refusé', 'responsable', 'route_reason', 'success_rate', 'total_calls', 'v24', 'whatsapp', '…']

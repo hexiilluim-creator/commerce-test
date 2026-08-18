@@ -1,0 +1,464 @@
+{
+  "lang": "ar",
+  "dir": "rtl",
+  "currency": "USD",
+  "currencySymbol": "$",
+  "nav": {
+    "features": "المميزات",
+    "audiences": "المجالات",
+    "pricing": "الأسعار",
+    "about": "حول",
+    "freeTrial": "تجربة مجانية"
+  },
+  "hero": {
+    "title": "بيع بدون عمولة، احصل على أموالك مباشرة",
+    "titleAccent": "مع الذكاء الاصطناعي",
+    "subtitle": "منصة ذكية تدير مبيعاتك على WhatsApp و Facebook و Instagram. بدون عمولة، أمان متقدم، دفع متعدد الدول.",
+    "cta": "ابدأ مجاناً",
+    "demo": "شاهد العرض"
+  },
+  "slides": {
+    "0": {
+      "title": "متجرك مفتوح دائماً",
+      "desc": "بع على مدار الساعة بفضل ذكاء AutoCommerce الاصطناعي"
+    },
+    "1": {
+      "title": "الحرفيون والمبدعون",
+      "desc": "استقبل طلباتك مباشرة على واتساب"
+    },
+    "2": {
+      "title": "صالونات التجميل",
+      "desc": "أدر مواعيدك وعملاءك بكل سهولة"
+    },
+    "3": {
+      "title": "التجارة المباشرة والتواصل الاجتماعي",
+      "desc": "بع مباشرة على إنستغرام وتيك توك وفيسبوك"
+    }
+  },
+  "waBadge": "طلبات مباشرة",
+  "stats": {
+    "revenue": "من الإيرادات المولدة",
+    "ai": "دعم ذكي 24/7",
+    "time": "من الوقت الموفر",
+    "secure": "آمن ومعتمد"
+  },
+  "features": {
+    "sectionTitle": "لماذا AutoCommerce؟",
+    "sectionSub": "منصة كاملة للبيع بدون احتكاك",
+    "f1Title": "بدون عمولة على الدفع",
+    "f1Desc": "بخلاف المنصات الأخرى، AutoCommerce لا تأخذ أي عمولة. أموال عملائك تذهب مباشرة إلى حسابك البنكي عبر Stripe أو Flouci أو CMI أو مزودي خدمات محليين آخرين. تحتفظ بـ 100% من إيراداتك.",
+    "f1l1": "بدون عمولة على المعاملات",
+    "f1l2": "الأموال تُستقبل مباشرة في حسابك",
+    "f1l3": "دعم متعدد الدول (تونس، المغرب، الجزائر، الإمارات، إلخ)",
+    "f2Title": "أمان متقدم ومعتمد",
+    "f2Desc": "بيانات حسابك البنكي لا تمر أبداً عبر خوادمنا. جميع الدفعات تتم بواسطة مزودي خدمات معتمدين PCI-DSS. نستخدم تشفير Fernet لمفاتيح API و webhooks آمنة لكل معاملة.",
+    "f2l1": "شهادات PCI-DSS من المزودين",
+    "f2l2": "تشفير البيانات الحساسة",
+    "f2l3": "Webhooks آمنة مع التحقق من التوقيع"
+  },
+  "audiences": {
+    "sectionTitle": "لجميع الأعمال",
+    "sectionSub": "سواء كنت حرفياً أو تاجراً أو رائد أعمال",
+    "items": [
+      {
+        "t": "💇 محلات الحلاقة والعناية",
+        "d": "أدر المواعيد واحصل على الدفع مباشرة. بدون عمولة لكل عميل."
+      },
+      {
+        "t": "🛍️ التجارة الإلكترونية والمتاجر",
+        "d": "بع على WhatsApp و Facebook و Instagram. فواتير تلقائية ودفع آمن."
+      },
+      {
+        "t": "🎨 الحرفيون والمبدعون",
+        "d": "اعرض إبداعاتك، استقبل الطلبات، احصل على الدفع بدون وسيط."
+      },
+      {
+        "t": "📱 البث المباشر والمؤثرون",
+        "d": "حقق دخلاً من بثك المباشر. المشاهدون يدفعون بنقرة واحدة."
+      }
+    ]
+  },
+  "pricing": {
+    "sectionTitle": "أسعار شفافة",
+    "sectionSub": "بدون عمولة = ربح أكثر لك",
+    "bestValue": "أفضل قيمة",
+    "choose": "ابدأ الآن",
+    "plans": [
+      {
+        "name": "مبتدئ",
+        "price": "0",
+        "period": "/شهر",
+        "features": [
+          "حتى 10 روابط دفع/شهر",
+          "قناة واحدة (WhatsApp أو FB أو IG)",
+          "فواتير PDF تلقائية",
+          "دعم عبر البريد الإلكتروني"
+        ]
+      },
+      {
+        "name": "احترافي",
+        "price": "29",
+        "period": "/شهر",
+        "features": [
+          "روابط دفع غير محدودة",
+          "جميع القنوات (WhatsApp و FB و IG و Email)",
+          "فواتير وعروض أسعار تلقائية",
+          "تحليلات مفصلة",
+          "دعم أولوي 24/7",
+          "دعم متعدد الدول"
+        ]
+      },
+      {
+        "name": "مؤسسي",
+        "price": "99",
+        "period": "/شهر",
+        "features": [
+          "كل ما في الخطة الاحترافية",
+          "API مخصصة",
+          "تكامل CRM",
+          "Webhooks متقدمة",
+          "فريق مخصص",
+          "ضمان 99.9%"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "مصممة لرجال الأعمال",
+    "p1": "وُلدت AutoCommerce من إحباط بسيط: التجار يدفعون عمولات كثيرة والعملاء يتخلون عن الدفع المعقد.",
+    "trustTitle": "الثقة والشفافية",
+    "trustDesc": "✓ بدون عمولة\n✓ شهادات PCI-DSS\n✓ تشفير Fernet\n✓ Webhooks آمنة\n✓ دعم 24/7",
+    "p2_pre": "أنشأنا منصة حيث ",
+    "p2_highlights": [
+      "بدون عمولة = ربح أكثر",
+      "الأمان مضمون",
+      "البيع بسيط مثل إرسال رسالة"
+    ],
+    "p2_join": "، حيث ",
+    "p2_post": "."
+  },
+  "footer": {
+    "tagline": "منصة الدفع بدون عمولة لرجال الأعمال الأفارقة.",
+    "product": "المنتج",
+    "company": "الشركة",
+    "legal": "قانوني",
+    "productLinks": [
+      "روابط الدفع",
+      "الفواتير",
+      "التحليلات",
+      "API"
+    ],
+    "companyLinks": [
+      "عن",
+      "مدونة",
+      "الوظائف",
+      "اتصل"
+    ],
+    "legalLinks": [
+      "الشروط",
+      "الخصوصية",
+      "الأمان",
+      "ملفات تعريف الارتباط"
+    ],
+    "copyright": "© 2024 AutoCommerce. جميع الحقوق محفوظة."
+  },
+  "auth": {
+    "title": "AutoCommerce",
+    "subtitle": "تجارة واتساب بالذكاء الاصطناعي",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "storeName": "اسم المتجر",
+    "storeNamePlaceholder": "متجري الرائع",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "you@example.com",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "••••••••",
+    "loginBtn": "دخول",
+    "registerBtn": "إنشاء الحساب",
+    "loading": "..."
+  },
+  "sidebar": {
+    "role": "الدور",
+    "logout": "🚪 تسجيل الخروج"
+  },
+  "nav_items": {
+    "dashboard": "📊 لوحة التحكم",
+    "products": "📦 المنتجات",
+    "appointments": "📅 المواعيد",
+    "orders": "🛒 الطلبات",
+    "conversations": "💬 المحادثات",
+    "settings": "⚙️ الإعدادات",
+    "stock_sources": "🔗 مصادر المخزون",
+    "social_broadcast": "📡 البث الاجتماعي",
+    "super_admin": "🛡️ الإدارة العليا",
+    "payment_links": "💳 روابط الدفع",
+    "promotions": "🎯 العروض الترويجية",
+    "my_storefront": "🏪 واجهة متجري",
+    "visual_builder": "🖼️ منشئ الكتالوج بالذكاء الاصطناعي",
+    "predictive_restocking": "📈 التزويد التنبؤي",
+    "loyalty_ia": "🎁 ولاء ذكي",
+    "b2b_portal": "🏭 بوابة B2B",
+    "dashboard_ceo": "👔 لوحة الرئيس التنفيذي",
+    "dashboard_commercial": "💼 لوحة المبيعات",
+    "dashboard_ia": "🤖 لوحة الذكاء الاصطناعي"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "subtitle": "نظرة عامة على نشاطك",
+    "noData": "لا توجد بيانات",
+    "period7d": "7 أيام",
+    "period30d": "30 يوماً",
+    "period90d": "90 يوماً",
+    "period12m": "12 شهراً",
+    "revenue": "رقم الأعمال",
+    "orders": "الطلبات",
+    "conversations": "المحادثات",
+    "products": "المنتجات",
+    "spendingTracker": "💰 متتبع المصروفات",
+    "spendingSubtitle": "تتبع مصروفات نشاطك",
+    "scanInvoice": "📄 مسح الفاتورة",
+    "add": "+ إضافة",
+    "budget": "الميزانية",
+    "spent": "المُنفَق",
+    "remaining": "المتبقي",
+    "overBudget": "تجاوز الميزانية",
+    "editBudget": "تعديل",
+    "saveBudget": "حفظ",
+    "cancelBudget": "إلغاء",
+    "aiInsight": "💡 تحليل الذكاء الاصطناعي",
+    "refreshInsight": "تحديث",
+    "byCategory": "حسب الفئة",
+    "recentExpenses": "المصروفات الأخيرة",
+    "noExpenses": "لا توجد مصروفات مسجّلة",
+    "addExpense": "إضافة مصروف",
+    "description": "الوصف",
+    "category": "الفئة",
+    "amount": "المبلغ",
+    "date": "التاريخ",
+    "vendor": "المورّد",
+    "note": "ملاحظة",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "scanTitle": "مسح فاتورة",
+    "scanDesc": "ارفع صورة أو PDF للفاتورة",
+    "scanBtn": "مسح",
+    "scanning": "جارٍ التحليل...",
+    "scanError": "خطأ في مسح الفاتورة. تحقق من اتصالك.",
+    "cats": {
+      "supplier": "📦 الموردون",
+      "fixed": "🏢 التكاليف الثابتة",
+      "marketing": "📢 التسويق",
+      "staff": "👥 الموظفون",
+      "logistics": "🚚 اللوجستيك",
+      "other": "📦 أخرى"
+    }
+  },
+  "products": {
+    "title": "المنتجات والمخزون",
+    "add": "إضافة",
+    "newProduct": "منتج جديد",
+    "fieldName": "الاسم *",
+    "fieldPrice": "السعر (TND) *",
+    "fieldStock": "المخزون *",
+    "fieldCategory": "الفئة",
+    "fieldImageUrl": "رابط الصورة",
+    "fieldDescription": "الوصف",
+    "colProduct": "المنتج",
+    "colCategory": "الفئة",
+    "colPrice": "السعر",
+    "colStock": "المخزون",
+    "colEmbedding": "Embedding",
+    "colActions": "الإجراءات",
+    "empty": "لا توجد منتجات",
+    "confirmDelete": "حذف هذا المنتج؟",
+    "visionTitle": "اختبار الرؤية بالذكاء الاصطناعي",
+    "visionDesc": "ارفع صورة منتج لاختبار التعرف + مطابقة المخزون",
+    "visionAnalyzing": "جاري التحليل...",
+    "visionChoose": "اختر صورة",
+    "visionAnalysis": "تحليل الرؤية",
+    "stockMatch": "مطابقة المخزون",
+    "productFound": "تم العثور على المنتج",
+    "noMatch": "لا يوجد منتج مطابق",
+    "visionError": "خطأ في التحليل"
+  },
+  "orders": {
+    "title": "الطلبات",
+    "allStatuses": "جميع الحالات",
+    "colId": "#",
+    "colClient": "العميل",
+    "colStatus": "الحالة",
+    "colItems": "العناصر",
+    "colChannel": "القناة",
+    "colTotal": "الإجمالي",
+    "colDate": "التاريخ",
+    "colActions": "الإجراءات",
+    "items": "عنصر",
+    "empty": "لا توجد طلبات",
+    "orderDetail": "طلب",
+    "address": "العنوان",
+    "notes": "ملاحظات",
+    "status": {
+      "pending": "قيد الانتظار",
+      "confirmed": "مؤكّد",
+      "paid": "مدفوع",
+      "shipped": "تم الشحن",
+      "delivered": "تم التسليم",
+      "cancelled": "ملغى"
+    }
+  },
+  "conversations": {
+    "title": "المحادثات",
+    "search": "بحث...",
+    "empty": "لا توجد محادثات",
+    "selectPrompt": "اختر محادثة",
+    "noMessages": "لا توجد رسائل",
+    "noFSM": "لا توجد تحولات مسجّلة",
+    "tabMessages": "الرسائل",
+    "tabFSM": "FSM Log",
+    "send": "إرسال",
+    "typeMessage": "اكتب رسالة...",
+    "searchPlaceholder": "ابحث عن محادثة...",
+    "emptyHint": "ابدأ الدردشة مع عملائك عبر واتساب أو إنستغرام أو فيسبوك."
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "store": "المتجر",
+    "whatsapp": "واتساب",
+    "payments": "المدفوعات",
+    "users": "المستخدمون",
+    "agent": "وكيل الذكاء الاصطناعي",
+    "social": "الشبكات الاجتماعية",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "language": "اللغة",
+    "langFr": "الفرنسية",
+    "langAr": "العربية",
+    "langEn": "الإنجليزية",
+    "langDe": "الألمانية"
+  },
+  "appointments": {
+    "title": "المواعيد",
+    "noAppointments": "لا توجد مواعيد",
+    "loading": "جارٍ التحميل...",
+    "add": "موعد جديد",
+    "client": "العميل",
+    "date": "التاريخ",
+    "time": "الوقت",
+    "service": "الخدمة",
+    "status": {
+      "pending": "قيد الانتظار",
+      "confirmed": "مؤكّد",
+      "cancelled": "ملغى"
+    }
+  },
+  "storefront": {
+    "notFound": "المتجر غير موجود",
+    "notFoundDesc": "هذا المتجر غير موجود أو تم تعطيله.",
+    "products": "منتجاتنا",
+    "findUs": "جدنا",
+    "call": "اتصل",
+    "orderWhatsApp": "اطلب عبر واتساب",
+    "inStock": "متوفر",
+    "outOfStock": "نفد المخزون",
+    "loading": "جارٍ التحميل...",
+    "open": "مفتوح",
+    "closed": "مغلق",
+    "close": "إغلاق",
+    "addToCart": "أضف إلى السلة",
+    "orderMessage": "مرحباً، أريد الطلب"
+  },
+  "superAdmin": {
+    "title": "الإدارة العليا",
+    "tenants": "المستأجرون",
+    "stats": "الإحصاءات",
+    "loading": "جارٍ التحميل...",
+    "noData": "لا توجد بيانات"
+  },
+  "stock": {
+    "title": "مصادر المخزون",
+    "add": "إضافة مصدر",
+    "noSources": "لا توجد مصادر",
+    "loading": "جارٍ التحميل..."
+  },
+  "social": {
+    "title": "البث الاجتماعي",
+    "publish": "نشر",
+    "schedule": "جدولة",
+    "loading": "جارٍ التحميل..."
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "error": "حدث خطأ",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "close": "إغلاق",
+    "confirm": "تأكيد",
+    "yes": "نعم",
+    "no": "لا",
+    "search": "بحث",
+    "noData": "لا توجد بيانات"
+  },
+  "payment_links": {
+    "title": "روابط الدفع",
+    "subtitle": "أنشئ وأرسل روابط دفع آمنة لعملائك",
+    "create": "رابط جديد",
+    "create_title": "إنشاء رابط دفع",
+    "create_subtitle": "سيتم اختيار مزود الدفع تلقائياً حسب بلدك",
+    "amount": "المبلغ",
+    "currency": "العملة",
+    "description": "الوصف",
+    "description_placeholder": "مثال: طلب #123، خدمة...",
+    "channel": "قناة الأصل",
+    "customer_info": "معلومات العميل (اختياري)",
+    "customer_name": "اسم العميل",
+    "customer_phone": "الهاتف",
+    "customer_email": "البريد الإلكتروني",
+    "cancel": "إلغاء",
+    "submit": "إنشاء الرابط",
+    "creating": "جاري الإنشاء...",
+    "share": "مشاركة",
+    "send": "إرسال",
+    "send_title": "إرسال الرابط",
+    "send_channel": "قناة الإرسال",
+    "send_recipient": "المستلم",
+    "send_message": "رسالة (اختياري)",
+    "send_message_placeholder": "رسالة مخصصة (سيتم إضافة الرابط تلقائياً)",
+    "send_success": "تم إرسال الرابط بنجاح!",
+    "send_success_desc": "استلم العميل رابط الدفع.",
+    "view_link": "عرض الرابط",
+    "invoice_pdf": "فاتورة PDF",
+    "delete": "حذف",
+    "delete_confirm": "حذف رابط الدفع هذا؟",
+    "filter_all": "الكل",
+    "filter_pending": "قيد الانتظار",
+    "filter_paid": "مدفوع",
+    "filter_expired": "منتهي",
+    "filter_failed": "فشل",
+    "empty_title": "لا توجد روابط دفع",
+    "empty_desc": "أنشئ أول رابط دفع وأرسله لعملائك",
+    "stats_paid": "إجمالي المدفوع",
+    "stats_pending": "قيد الانتظار",
+    "stats_paid_count": "روابط مدفوعة",
+    "stats_total": "روابط منشأة",
+    "refresh": "تحديث",
+    "prev": "السابق",
+    "next": "التالي",
+    "page_of": "صفحة {page} / {total}",
+    "sent_at": "أُرسل",
+    "paid_at": "دُفع",
+    "status_pending": "قيد الانتظار",
+    "status_paid": "مدفوع",
+    "status_expired": "منتهي",
+    "status_failed": "فشل",
+    "copy_link": "نسخ الرابط",
+    "copied": "تم نسخ الرابط!",
+    "instagram_copy": "تم نسخ الرابط! الصقه في قصتك أو رسالتك على إنستغرام.",
+    "provider_not_configured": "لم يتم تكوين مزود دفع. اذهب إلى الإعدادات.",
+    "error_loading": "خطأ في تحميل الروابط",
+    "error_creating": "خطأ في إنشاء الرابط",
+    "error_sending": "خطأ في الإرسال",
+    "error_deleting": "خطأ في الحذف"
+  }
+}

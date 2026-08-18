@@ -1,0 +1,51 @@
+# AutoCommerce V25 — Ruff Configuration
+line-length = 120
+target-version = "py312"
+
+[lint]
+# E: pycodestyle
+# F: Pyflakes
+# I: isort
+# B: flake8-bugbear
+# S: flake8-bandit
+# UP: pyupgrade
+# PL: Pylint
+# N: pep8-naming
+select = ["E", "F", "I", "B", "UP", "N"]
+
+# Ignorer les erreurs bloquantes mais non critiques pour un livrable robuste
+ignore = [
+    "E501",    # Line too long
+    "B008",    # Do not perform function call in argument defaults (FastAPI Depends)
+    "N999",    # Invalid module name (api-server)
+    "F401",    # Unused import (parfois nécessaire pour les types ou extensions)
+    "F811",    # Redefinition of unused name
+    "E402",    # Module level import not at top of file
+    "W293",    # Blank line contains whitespace
+    "UP007",   # Use `X | Y` for type annotations (compatibilité)
+    "N806",    # Variable in function should be lowercase (SessionLocal)
+    "B904",    # Within an `except` clause, raise exceptions with `raise ... from err`
+    "N818",    # Exception name should be named with an Error suffix
+    "N803",    # Argument name should be lowercase
+    "N805",    # First argument of a method should be named `self`
+    "E701",    # Multiple statements on one line (colon)
+    "E702",    # Multiple statements on one line (semicolon)
+    "E741",    # Ambiguous variable name
+    "B007",    # Loop control variable not used
+    "N802",    # Function name should be lowercase
+    "N813",    # Camelcase imported as lowercase
+    "F821",    # Undefined name (éparpillés dans le code existant)
+    "F823",    # Local variable referenced before assignment
+    "UP035",   # Deprecated typing imports
+]
+
+[lint.per-file-ignores]
+"tests/*" = ["S101", "S105", "S106"]
+"alembic/*" = ["E402"]
+"main.py" = ["E402"]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"

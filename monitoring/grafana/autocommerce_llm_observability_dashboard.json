@@ -1,0 +1,33 @@
+{
+  "title": "AutoCommerce Enterprise — LLM & Omnical Observability",
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Prompt tokens / min",
+      "targets": [{"expr": "sum by (tenant,agent,model) (rate(autocommerce_prompt_tokens_total[1m]))"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "Completion tokens / min",
+      "targets": [{"expr": "sum by (tenant,agent,model) (rate(autocommerce_completion_tokens_total[1m]))"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "LLM cost / hour",
+      "targets": [{"expr": "sum by (tenant,agent,model) (rate(autocommerce_llm_cost_usd_total[1h])) * 3600"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "p95 LLM latency",
+      "targets": [{"expr": "histogram_quantile(0.95, sum by (le,tenant,agent,model,provider) (rate(autocommerce_llm_latency_seconds_bucket[5m])))"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "Webhook dedup hits",
+      "targets": [{"expr": "sum by (channel,outcome) (rate(autocommerce_webhook_dedup_hits_total[5m]))"}]
+    }
+  ]
+}

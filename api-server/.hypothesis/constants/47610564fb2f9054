@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/vision_analyzer.py
+# hypothesis_version: 6.131.9
+
+[b'GIF87a', b'GIF89a', b'WEBP', b'\x89PNG', b'\xff\xd8\xff', 0.0, 30.0, 400, 1200, 'OPENAI_VISION_MODEL', '```', 'category', 'confidence', 'content', 'description', 'found', 'gpt-4o', 'id', 'image/gif', 'image/jpeg', 'image/png', 'image/webp', 'image_url', 'json', 'name', 'null', 'other', 'price_hint', 'product_hints', 'raw_text', 'role', 'system', 'tags', 'text', 'type', 'unknown', 'url', 'user', 'utf-8']

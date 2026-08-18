@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/owner_agent.py
+# hypothesis_version: 6.131.9
+
+[1.0, 2.0, 100, 200, 500, '***', '30 derniers jours', '7 derniers jours', '?', '```', '```json', 'annuler', "aujourd'hui", 'aywa', 'broadcast', 'broadcast ', 'broadcast_msg', 'cancel', 'cancel_broadcast', 'clients_stats', 'confirm', 'content', 'daily_report', 'envoyer ', 'help', 'intent', 'month', 'no', 'non', 'ok', 'orders_summary', 'oui', 'owner_agent.intent', 'owner_session', 'pending_broadcast', 'period', 'product_hint', 'product_name', 'role', 'send ', 'set_stock_alert', 'stock_check', 'system', 'threshold', 'today', 'unknown', 'user', 'week', 'whatsapp', 'yes', 'لا', 'نعم', 'يا', '❌ Broadcast annulé.', '🏆 Top produits :', '📦 *Stock actuel* :', '🔴', '🟡', '🟢']

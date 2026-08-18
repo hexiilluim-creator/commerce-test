@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/observability/shadow_observer.py
+# hypothesis_version: 6.131.9
+
+[0.0, 100, 'acceptance_rate_pct', 'accepted', 'active', 'channels', 'error_types', 'last_event_at', 'normalize_errors', 'omnicall_v9.observer', 'rejected', 'routes', 'shadow_mode', 'started_at', 'total', 'total_events', 'uptime_seconds']

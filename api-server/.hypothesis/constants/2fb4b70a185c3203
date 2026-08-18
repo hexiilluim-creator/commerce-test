@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/auto_promoter.py
+# hypothesis_version: 6.131.9
+
+[99.0, 100, '0', 'acceptance_rate', 'acceptance_rate_pct', 'channels', 'current_rollout_pct', 'errors', 'normalize_errors', 'ready', 'reason', 'total', 'total_messages']

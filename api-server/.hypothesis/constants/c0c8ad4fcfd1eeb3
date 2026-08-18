@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/integrations.py
+# hypothesis_version: 6.131.9
+
+[10.0, 100, 200, 400, 401, 404, 500, '...', '/', '/integrations', '/{integration_type}', 'API Stock externe', 'Authorization', 'Integrations', 'No tenant context', 'Store not found', 'TEST-SKU', 'Webhook CRM', 'Webhook commandes', 'admin', 'ai_knowledge_url', 'api_key_configured', 'api_key_enc', 'catalog_import_url', 'configured', 'crm_webhook', 'description', 'enabled', 'error', 'example', 'example_url', 'extra_config', 'http://', 'https://', 'integrations', 'label', 'message', 'order_webhook', 'payment_notify_url', 'removed', 'requires_key', 'status', 'status_code', 'stock_api', 'stock_api_enabled', 'stock_api_key_enc', 'success', 'test', 'type', 'url', 'url_tested', '{question}', '{sku}']

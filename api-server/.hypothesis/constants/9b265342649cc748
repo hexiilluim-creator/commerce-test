@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/security_overlay/billing_overlay.py
+# hypothesis_version: 6.131.9
+
+['Business', 'ENV', 'Enterprise', 'Gold', 'Gratuit', 'PYTEST_CURRENT_TEST', 'Premium', 'Pro', 'Pro WhatsApp', 'Starter', '_feature_overrides', 'active', 'advanced_stats', 'auto_followup', 'b2b_portal', 'billing_overlay', 'billing_plan_code', 'billing_status', 'business', 'channels.facebook', 'channels.instagram', 'channels.messenger', 'channels.tiktok', 'channels.whatsapp', 'crm.advanced', 'crm.basic', 'days_remaining', 'enterprise', 'expires_at', 'features', 'free', 'gold', 'is_active', 'is_paid', 'loyalty_ia', 'marketing', 'omnichannel', 'plan_code', 'plan_label', 'premium', 'priority_support', 'pro', 'pro_whatsapp', 'promotions', 'restocking', 'starter', 'store_id', 'test', 'visual_builder']

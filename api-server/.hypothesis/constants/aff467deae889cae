@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/celery_app.py
+# hypothesis_version: 6.131.9
+
+[120, '0', '1', '127.0.0.1', '1800', 'APP_ENV', 'CELERY_BROKER_URL', 'DEPLOY_ENV', 'ENV', 'REDIS_URL', 'UTC', 'accept_content', 'ai', 'ai.dlq', 'autocommerce', 'beat_schedule', 'billing', 'billing.dlq', 'celery', 'enable_utc', 'imports', 'interval_max', 'interval_start', 'interval_step', 'json', 'localhost', 'max_retries', 'name', 'on_failure', 'payments', 'payments.dlq', 'production', 'queue', 'result_serializer', 'schedule', 'services.tasks', 'social', 'social.dlq', 'task', 'task_acks_late', 'task_always_eager', 'task_annotations', 'task_failure', 'task_queues', 'task_routes', 'task_serializer', 'test', 'timezone', 'true', 'unknown', 'webhook', 'whatsapp', 'whatsapp.dlq', 'yes']

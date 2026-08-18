@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/models/blueprints.py
+# hypothesis_version: 6.131.9
+
+[255, 1000, 2000, 'automotive', 'beauty_salon', 'blueprints', 'general_shop', 'guesthouse', 'restaurant', 'store_blueprints']

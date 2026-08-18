@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/pipeline/safe_boundary.py
+# hypothesis_version: 6.131.9
+
+[0.0, 8.0, 1000, 'accepted', 'channel', 'duration_ms', 'error', 'error_type', 'message_id', 'pipeline_exception', 'reason', 'store_id']

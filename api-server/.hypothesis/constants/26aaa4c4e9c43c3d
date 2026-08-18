@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/tax_service.py
+# hypothesis_version: 6.131.9
+
+[0.0, '0', '0.00', '0.0001', '0.01', '0.14', '0.15', '0.19', '0.20', '1', 'AE', 'DZ', 'EG', 'EUR', 'FR', 'GB', 'MA', 'Paiement', 'Produit', 'SA', 'TN', 'TND', 'TVA', 'TVA exonérée', 'US', 'applied_rate', 'breakdown', 'categories', 'category', 'country', 'country_code', 'currency', 'default_tax_country', 'exempt_reason', 'exemption', 'fallback', 'id', 'is_tax_exempt', 'items', 'label', 'name', 'orders_updated', 'price', 'prices_include_tax', 'product', 'product_category', 'product_id', 'product_name', 'qty', 'quantity', 'rate', 'subtotal', 'subtotal_amount', 'tax_amount', 'tax_category', 'tax_exempt', 'tax_label', 'tax_rates', 'taxable_base', 'total', 'total_amount', 'unit_price']

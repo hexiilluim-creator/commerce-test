@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/models/loyalty_ia.py
+# hypothesis_version: 6.131.9
+
+[0.0, 120, 255, 'archived', 'behavioral', 'candidate', 'co_occurrence', 'custom', 'customer_id', 'ix_churn_band', 'ix_churn_customer', 'ix_csm_segment_score', 'lifecycle', 'loyalty_churn_scores', 'medium', 'name', 'production', 'rfm', 'risk_band', 'score', 'segment_definitions', 'segment_id', 'segment_type', 'staging', 'store_id', 'uq_customer_segment', 'uq_lia_model_version', 'version']

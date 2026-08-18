@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/normalizers/whatsapp.py
+# hypothesis_version: 6.131.9
+
+['body', 'event_at', 'external_id', 'from', 'id', 'message_id', 'metadata', 'phone', 'phone_number_id', 'store_id', 'tenant_ref', 'text', 'timestamp', 'trace_id', 'type']

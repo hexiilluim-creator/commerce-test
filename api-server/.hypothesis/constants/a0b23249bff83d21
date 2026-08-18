@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/b2b_portal_service.py
+# hypothesis_version: 6.131.9
+
+['%Y%m%d%H%M%S', '0', '0.00', '0.0000', '0.0001', '0.01', '1', '100', 'EUR', 'Tarif catalogue', 'account_type', 'accounts_total', 'applied_rule_id', 'approval_status', 'approved', 'at', 'b2b.order_approved', 'b2b.order_created', 'b2b.quote_price', 'b2b_order_id', 'base_unit_price', 'by_user_id', 'company_account_id', 'contract_code', 'country', 'created', 'credit_exposure', 'default_tax_country', 'deferred', 'event', 'final_unit_price', 'group_invoiced', 'invoice_number', 'line_total', 'name', 'note', 'order_count', 'overdue_invoices', 'pending_orders', 'price_explanation', 'price_override', 'pricing_rule_id', 'pricing_rule_type', 'product_id', 'qty', 'reviewer_user_id', 'sku', 'status', 'store_id', 'unit_price', 'value', 'variant_id']

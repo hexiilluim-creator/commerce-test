@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/stores.py
+# hypothesis_version: 6.131.9
+
+[401, 404, '/me', '/stores', 'No tenant context', 'Store not found', 'Stores', 'billing_status', 'created_at', 'id', 'is_active', 'language', 'logo_url', 'name', 'owner_phone', 'slug', 'support_email', 'whatsapp_phone']

@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/visual_builder.py
+# hypothesis_version: 6.131.9
+
+[100, 200, 404, 500, 4000, '/', '/generate', '/visual-builder', '/{build_id}/history', '/{build_id}/photos', '/{build_id}/publish', '/{build_id}/review', '/{build_id}/seo', '/{build_id}/submit', 'admin', 'alt', 'assets', 'build_id', 'fr', 'get', 'id', 'manager', 'premium', 'status', 'url', 'user_id', 'visual_builder']

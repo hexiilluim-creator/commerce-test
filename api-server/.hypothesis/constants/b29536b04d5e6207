@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/ops_admin.py
+# hypothesis_version: 6.131.9
+
+[200, 401, 403, 500, 1440, 86400, '/ops-admin', 'AGENT_MUTE', 'AGENT_TAKEOVER', 'AGENT_UNMUTE', 'AUDIT_MONGO_URL', 'OPS_ADMIN_ACTION %s', 'TENANT_PAUSE', 'TENANT_RESUME', 'action', 'actor', 'autocommerce_audit', 'expires_at', 'expires_at_unix', 'extra', 'ip', 'minutes', 'ops_actions', 'paused', 'reason', 'redis_unavailable', 'resume', 'role', 'store_id', 'super_admin', 'target', 'ts', 'ua', 'unknown', 'user-agent', 'user_email', 'warning']

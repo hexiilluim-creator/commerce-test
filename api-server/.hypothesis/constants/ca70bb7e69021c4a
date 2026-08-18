@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/middleware/audit_log.py
+# hypothesis_version: 6.131.9
+
+[100, 200, 401, 403, 429, 500, 1000, '***REDACTED***', '/api/', '/api/v1/admin', '/api/v1/auth', '/api/v1/billing', '/api/v1/payments', '/api/v1/security', '/api/v1/stores', '/api/v1/super-admin', '/api/v1/users', 'AuditLogMiddleware', 'DELETE', 'PATCH', 'POST', 'PUT', 'SIGNING_FAILED', 'audit', 'authorization', 'client_ip', 'cookie', 'data_mutation', 'duration_ms', 'entry_hmac', 'event', 'is_auth_failure', 'is_forbidden', 'is_rate_limited', 'method', 'path', 'query', 'security_event', 'sensitive_access', 'server_error', 'set-cookie', 'signing_error', 'status_code', 'store_id', 'timestamp', 'trace_id', 'unknown', 'user-agent', 'user_agent', 'utf-8', 'x-api-key']

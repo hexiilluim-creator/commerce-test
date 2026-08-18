@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/senders/social.py
+# hypothesis_version: 6.131.9
+
+[1000, 'button', 'content_type', 'id', 'image', 'message_id', 'payload', 'postback', 'text', 'title', 'type']

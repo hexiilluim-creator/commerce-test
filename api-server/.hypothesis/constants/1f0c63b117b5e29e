@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/super_admin.py
+# hypothesis_version: 6.131.9
+
+[0.0, 100, 200, 365, 400, 401, 403, 404, 409, 500, 3650, '/plans/pricing', '/stats', '/stores', '/subscriptions', '/super-admin', '10/minute', '30/minute', 'J-1', 'J-7', 'Nouveau plan', 'Store not found', 'Super Admin', 'active', 'admin', 'admin:superadmin', 'admin_email', 'all', 'blocked', 'blocked_at', 'cancelled', 'created', 'created_at', 'created_by', 'duration_months', 'expired', 'expires_at', 'id', 'is_paid', 'label', 'months', 'none', 'notes', 'plan_code', 'price_dt', 'price_paid_dt', 'reactivated', 'reminder_1d_sent_at', 'reminder_7d_sent_at', 'reminders_1d_sent', 'reminders_7d_sent', 'role', 'starter', 'starts_at', 'status', 'store_id', 'store_name', 'stores_list_failed', 'subscription_expired', 'subscription_id', 'super_admin', 'suspended', 'tenant_id', 'tenant_ids', 'updated', 'user_email']

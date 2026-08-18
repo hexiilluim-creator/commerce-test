@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/conversations.py
+# hypothesis_version: 6.131.9
+
+[100, 200, 400, 401, 404, 424, 502, '***', '/', '/conversations', '/{customer_id}/reply', 'Conversations', 'Customer not found', 'No tenant context', 'Store not found', 'ai_analysis', 'ai_response', 'all', 'channel', 'content', 'created_at', 'customer', 'direction', 'from_state', 'fsm_state', 'id', 'idle', 'inbound', 'is_manual_reply', 'items', 'language', 'last_emotion', 'last_message_at', 'message_type', 'messages', 'name', 'order_id', 'outbound', 'page', 'payload', 'payment_provider', 'preferences', 'processed', 'recipient', 'sent', 'social_sender_id', 'status', 'text', 'text_len', 'to_state', 'total', 'total_amount', 'trigger', 'wa_message_id', 'whatsapp', 'whatsapp_phone']

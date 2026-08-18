@@ -1,0 +1,102 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# AutoCommerce V25 — docker-compose.ha.yml  (High Availability overlay)
+# ═══════════════════════════════════════════════════════════════════════════
+# Usage: docker compose --env-file ./api-server/.env -f docker-compose.yml -f docker-compose.ha.yml up -d
+#
+# Ajoute pour 500-2000 tenants:
+#   - PgBouncer (connection pooler transaction-mode)
+#   - API: 3 replicas (horizontal scale)
+#   - Celery: 2 workers
+#   - Redis Sentinel (HA failover)
+# ═══════════════════════════════════════════════════════════════════════════
+version: "3.9"
+
+services:
+  pgbouncer:
+    image: bitnami/pgbouncer:1.23.0
+    container_name: autocommerce_pgbouncer
+    restart: unless-stopped
+    env_file:
+      - ./api-server/.env
+    environment:
+      POSTGRESQL_HOST: postgres
+      POSTGRESQL_PORT: "5432"
+      POSTGRESQL_DATABASE: autocommerce
+      POSTGRESQL_USERNAME: autocommerce
+      POSTGRESQL_PASSWORD: "${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}"
+      PGBOUNCER_DATABASE: autocommerce
+      PGBOUNCER_POOL_MODE: transaction
+      PGBOUNCER_MAX_CLIENT_CONN: "2000"
+      PGBOUNCER_DEFAULT_POOL_SIZE: "100"
+      PGBOUNCER_MIN_POOL_SIZE: "10"
+      PGBOUNCER_RESERVE_POOL_SIZE: "10"
+      PGBOUNCER_RESERVE_POOL_TIMEOUT: "5"
+      PGBOUNCER_SERVER_IDLE_TIMEOUT: "600"
+      # V25.2 — mot de passe requis à la résolution compose, jamais vide en HA.
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "6432:6432"
+    healthcheck:
+      test: ["CMD-SHELL", "psql -h 127.0.0.1 -p 6432 -U autocommerce -d pgbouncer -c 'SHOW POOLS;' > /dev/null 2>&1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # AUDIT-FIX : avec 3 replicas API qui lançaient chacun `alembic upgrade
+  # heads` au boot, les 3 instances entraient en concurrence sur la même DB.
+  # Ce job dédié migre une seule fois ; les replicas API sautent l'étape via
+  # RUN_MIGRATIONS_ON_BOOT=0 et attendent sa complétion.
+  migrate:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+    container_name: autocommerce_migrate
+    restart: "no"
+    env_file:
+      - ./api-server/.env
+    environment:
+      DATABASE_URL: "postgresql+asyncpg://autocommerce:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}@pgbouncer:6432/autocommerce"
+    depends_on:
+      pgbouncer:
+        condition: service_healthy
+    command: ["python3", "-m", "alembic", "upgrade", "heads"]
+
+  api:
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    environment:
+      DATABASE_URL: "postgresql+asyncpg://autocommerce:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}@pgbouncer:6432/autocommerce"
+      DB_POOL_SIZE: "5"
+      DB_MAX_OVERFLOW: "2"
+      UVICORN_WORKERS: "4"
+      RUN_MIGRATIONS_ON_BOOT: "0"  # AUDIT-FIX: migration faite une fois par le job `migrate` ci-dessus
+    depends_on:
+      pgbouncer:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+
+  celery:
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    environment:
+      DATABASE_URL: "postgresql+asyncpg://autocommerce:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}@pgbouncer:6432/autocommerce"
+
+  redis-sentinel:
+    image: redis:7-alpine
+    container_name: autocommerce_redis_sentinel
+    restart: unless-stopped
+    volumes:
+      - ./monitoring/redis-sentinel.conf:/etc/sentinel/sentinel.conf:ro
+    command: ["redis-sentinel", "/etc/sentinel/sentinel.conf"]
+    depends_on:
+      - redis
+    ports:
+      - "26379:26379"

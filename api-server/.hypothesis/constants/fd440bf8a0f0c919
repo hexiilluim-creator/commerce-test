@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/blueprint_service.py
+# hypothesis_version: 6.131.9
+
+[0.0, 'Produit', 'Service', 'ai_agent_prompt', 'applied', 'blueprint_id', 'blueprint_service', 'business_type', 'category', 'default_ai_prompt', 'description', 'duration_minutes', 'extra_config', 'extra_modules', 'icon', 'id', 'initial_data', 'message', 'modules_enabled', 'name', 'price', 'products', 'quotas', 'service_category', 'services', 'stock_qty', 'ui_visibility']

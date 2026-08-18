@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/security_overlay/models.py
+# hypothesis_version: 6.131.9
+
+[0.0, 255, 500, '0', '1', '50', '500', 'CASCADE', 'TND', 'active', 'credit_events', 'credit_top_up_packs', 'false', 'free', 'plan_limits', 'stores.id', 'tenant_subscriptions', 'true']

@@ -1,0 +1,42 @@
+[run]
+source = .
+omit =
+    tests/*
+    alembic/*
+    htmlcov/*
+    reports/*
+    conftest.py
+    setup.py
+    */__pycache__/*
+    */migrations/*
+    # Scripts one-shot de bootstrap/seed/smoke, non chargés par l’application
+    # FastAPI en production; exclus explicitement conformément au gate G1.
+    setup_final.py
+    smoke_test_bloc9.py
+    run_smoke_p0.py
+    run_smoke_p1.py
+    seed_full.py
+    seed_production.py
+    reset_passwords.py
+    test_ai_fallback.py
+
+[report]
+# P1.1 — Seuil de couverture global porté à 80% (exigence prompt).
+# Précédemment à 45 (prudent) puis 55. Porté à 80 après ajout massif
+# de tests dans tests/unit/, tests/payments/, tests/security/.
+fail_under = 80
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if TYPE_CHECKING:
+    raise NotImplementedError
+    pass
+    \.\.\.$
+    if __name__ == .__main__.:
+    @(abc\.)?abstractmethod
+
+[html]
+directory = reports/htmlcov
+
+[xml]
+output = reports/coverage.xml

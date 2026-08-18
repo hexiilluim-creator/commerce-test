@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/middleware/csrf_protection.py
+# hypothesis_version: 6.131.9
+
+[403, 3600, '.', '/', '/api/v1/auth/login', '/api/v1/auth/login/', '/api/v1/auth/refresh', '/api/v1/auth/sso', '/api/v1/auth/sso/', '/api/v1/ops/', '/api/v1/storefront/', '/docs', '/health', '/metrics', '/openapi.json', '/redoc', 'CSRF token invalid', 'CSRF token missing', 'CSRF_COOKIE_NAME', 'CSRF_HEADER_NAME', 'CSRF_SECRET', 'ENV', 'GET', 'HEAD', 'OPTIONS', 'PYTEST_CURRENT_TEST', 'TRACE', 'X-CSRF-Token', 'csrf', 'csrf_token', 'csrf_token_mismatch', 'csrf_token_missing', 'detail', 'development', 'error', 'lax', 'prod', 'production', 'staging', 'strict', 'test', 'unknown']

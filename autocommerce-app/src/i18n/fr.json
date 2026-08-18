@@ -1,0 +1,464 @@
+{
+  "lang": "fr",
+  "dir": "ltr",
+  "currency": "EUR",
+  "currencySymbol": "€",
+  "nav": {
+    "features": "Fonctionnalités",
+    "audiences": "Métiers",
+    "pricing": "Tarifs",
+    "about": "À Propos",
+    "freeTrial": "Essai Gratuit"
+  },
+  "hero": {
+    "title": "Vendez sans Commission, Recevez l'Argent Directement",
+    "titleAccent": "avec l'IA",
+    "subtitle": "La plateforme IA qui gère vos ventes sur WhatsApp, Facebook et Instagram. Zéro commission, sécurité avancée, paiements multi-pays.",
+    "cta": "Démarrer Gratuitement",
+    "demo": "Voir la Démo"
+  },
+  "slides": {
+    "0": {
+      "title": "Votre boutique, toujours ouverte",
+      "desc": "Vendez 24h/24 grâce à l'IA AutoCommerce"
+    },
+    "1": {
+      "title": "Artisans & Créateurs",
+      "desc": "Recevez vos commandes directement sur WhatsApp"
+    },
+    "2": {
+      "title": "Salons & Métiers de Beauté",
+      "desc": "Gérez rendez-vous et clients en toute sérénité"
+    },
+    "3": {
+      "title": "Live Commerce & Réseaux Sociaux",
+      "desc": "Vendez en direct sur Instagram, TikTok & Facebook"
+    }
+  },
+  "waBadge": "Commandes en direct",
+  "stats": {
+    "revenue": "de revenus générés",
+    "ai": "Support IA 24/7",
+    "time": "de temps économisé",
+    "secure": "Sécurisé & Certifié"
+  },
+  "features": {
+    "sectionTitle": "Pourquoi AutoCommerce ?",
+    "sectionSub": "Une plateforme complète pour vendre sans friction",
+    "f1Title": "Zéro Commission sur les Paiements",
+    "f1Desc": "Contrairement aux autres plateformes, AutoCommerce ne prend AUCUNE commission. L'argent de vos clients va directement à votre compte bancaire via Stripe, Flouci, CMI ou d'autres providers locaux. Vous gardez 100% de vos revenus.",
+    "f1l1": "Aucune commission sur les transactions",
+    "f1l2": "Argent reçu directement sur votre compte",
+    "f1l3": "Support multi-pays (TN, MA, DZ, AE, etc.)",
+    "f2Title": "Sécurité Avancée & Certifiée",
+    "f2Desc": "Vos données bancaires ne passent jamais par nos serveurs. Tous les paiements sont traités par des providers certifiés PCI-DSS (Stripe, Flouci, CMI). Nous utilisons le chiffrement Fernet pour les clés API et les webhooks sécurisés pour chaque transaction.",
+    "f2l1": "Certifications PCI-DSS des providers",
+    "f2l2": "Chiffrement des données sensibles",
+    "f2l3": "Webhooks sécurisés avec vérification de signature"
+  },
+  "audiences": {
+    "sectionTitle": "Pour Tous les Métiers",
+    "sectionSub": "Que vous soyez artisan, commerçant ou entrepreneur",
+    "items": [
+      {
+        "t": "💇 Coiffeurs & Salons",
+        "d": "Gérez vos rendez-vous et recevez les paiements directement. Zéro commission sur chaque client."
+      },
+      {
+        "t": "🛍️ E-commerce & Boutiques",
+        "d": "Vendez sur WhatsApp, Facebook, Instagram. Factures automatiques et paiements sécurisés."
+      },
+      {
+        "t": "🎨 Artisans & Créateurs",
+        "d": "Présentez vos créations, recevez les commandes, encaissez sans intermédiaire."
+      },
+      {
+        "t": "📱 Livestream & Influenceurs",
+        "d": "Monetisez vos lives directement. Les spectateurs paient en un clic."
+      }
+    ]
+  },
+  "pricing": {
+    "sectionTitle": "Tarifs Transparents",
+    "sectionSub": "Zéro Commission = Plus de Profit pour Vous",
+    "bestValue": "Meilleur Rapport",
+    "choose": "Commencer",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "0",
+        "period": "/mois",
+        "features": [
+          "Jusqu'à 10 liens de paiement/mois",
+          "1 canal social (WhatsApp, FB ou IG)",
+          "Facturation automatique PDF",
+          "Support par email"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "29",
+        "period": "/mois",
+        "features": [
+          "Liens de paiement illimités",
+          "Tous les canaux (WhatsApp, FB, IG, Email)",
+          "Facturation & Devis automatiques",
+          "Analytics détaillées",
+          "Support prioritaire 24/7",
+          "Multi-pays (TN, MA, DZ, AE, etc.)"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "99",
+        "period": "/mois",
+        "features": [
+          "Tout du plan Pro",
+          "API personnalisée",
+          "Intégration CRM",
+          "Webhooks avancés",
+          "Équipe dédiée",
+          "SLA 99.9%"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Conçu pour les Entrepreneurs",
+    "p1": "AutoCommerce est née d'une frustration simple : les commerçants paient trop de commissions et les clients abandonnent les paiements compliqués.",
+    "trustTitle": "Confiance & Transparence",
+    "trustDesc": "✓ Zéro Commission\n✓ Certifications PCI-DSS\n✓ Chiffrement Fernet\n✓ Webhooks Sécurisés\n✓ Support 24/7",
+    "p2_pre": "Nous avons créé une plateforme où ",
+    "p2_highlights": [
+      "zéro commission = plus de profit",
+      "la sécurité est garantie",
+      "vendre est aussi simple que d'envoyer un message"
+    ],
+    "p2_join": ", où ",
+    "p2_post": "."
+  },
+  "footer": {
+    "tagline": "La plateforme de paiement sans commission pour les entrepreneurs africains.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "productLinks": [
+      "Liens de Paiement",
+      "Facturation",
+      "Analytics",
+      "API"
+    ],
+    "companyLinks": [
+      "À Propos",
+      "Blog",
+      "Carrières",
+      "Contact"
+    ],
+    "legalLinks": [
+      "Conditions",
+      "Confidentialité",
+      "Sécurité",
+      "Cookies"
+    ],
+    "copyright": "© 2024 AutoCommerce. Tous droits réservés."
+  },
+  "auth": {
+    "title": "AutoCommerce",
+    "subtitle": "Commerce IA sur WhatsApp",
+    "login": "Connexion",
+    "register": "Créer un compte",
+    "storeName": "Nom de la boutique",
+    "storeNamePlaceholder": "Ma Super Boutique",
+    "email": "Email",
+    "emailPlaceholder": "vous@example.com",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "••••••••",
+    "loginBtn": "Se connecter",
+    "registerBtn": "Créer le compte",
+    "loading": "..."
+  },
+  "sidebar": {
+    "role": "Rôle",
+    "logout": "🚪 Déconnexion"
+  },
+  "nav_items": {
+    "dashboard": "📊 Tableau de bord",
+    "products": "📦 Produits",
+    "appointments": "📅 Rendez-vous",
+    "orders": "🛒 Commandes",
+    "conversations": "💬 Conversations",
+    "settings": "⚙️ Paramètres",
+    "stock_sources": "🔗 Sources Stock",
+    "social_broadcast": "📡 Social Broadcast",
+    "super_admin": "🛡️ Super Admin",
+    "payment_links": "💳 Liens de Paiement",
+    "promotions": "🎯 Promotions",
+    "my_storefront": "🏪 Ma Vitrine",
+    "visual_builder": "🖼️ Catalog Builder IA",
+    "predictive_restocking": "📈 Restocking prédictif",
+    "loyalty_ia": "🎁 Loyalty IA",
+    "b2b_portal": "🏭 Portail B2B",
+    "dashboard_ceo": "👔 Dashboard CEO",
+    "dashboard_commercial": "💼 Dashboard Commercial",
+    "dashboard_ia": "🤖 Dashboard IA"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "subtitle": "Vue d'ensemble de votre activité",
+    "noData": "Pas de données",
+    "period7d": "7 jours",
+    "period30d": "30 jours",
+    "period90d": "90 jours",
+    "period12m": "12 mois",
+    "revenue": "Chiffre d'affaires",
+    "orders": "Commandes",
+    "conversations": "Conversations",
+    "products": "Produits",
+    "spendingTracker": "💰 Spending Tracker",
+    "spendingSubtitle": "Suivi des dépenses de votre activité",
+    "scanInvoice": "📄 Scanner facture",
+    "add": "+ Ajouter",
+    "budget": "Budget",
+    "spent": "Dépensé",
+    "remaining": "Restant",
+    "overBudget": "Dépassement",
+    "editBudget": "Modifier",
+    "saveBudget": "Sauvegarder",
+    "cancelBudget": "Annuler",
+    "aiInsight": "💡 Analyse IA",
+    "refreshInsight": "Actualiser",
+    "byCategory": "Par catégorie",
+    "recentExpenses": "Dépenses récentes",
+    "noExpenses": "Aucune dépense enregistrée",
+    "addExpense": "Ajouter une dépense",
+    "description": "Description",
+    "category": "Catégorie",
+    "amount": "Montant",
+    "date": "Date",
+    "vendor": "Fournisseur",
+    "note": "Note",
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "scanTitle": "Scanner une facture",
+    "scanDesc": "Importez une image ou PDF de votre facture",
+    "scanBtn": "Scanner",
+    "scanning": "Analyse en cours...",
+    "scanError": "Erreur scan facture. Vérifiez votre connexion.",
+    "cats": {
+      "supplier": "📦 Fournisseurs",
+      "fixed": "🏢 Coûts fixes",
+      "marketing": "📢 Marketing",
+      "staff": "👥 Personnel",
+      "logistics": "🚚 Logistique",
+      "other": "📦 Autre"
+    }
+  },
+  "products": {
+    "title": "Produits & Stock",
+    "add": "Ajouter",
+    "newProduct": "Nouveau produit",
+    "fieldName": "Nom *",
+    "fieldPrice": "Prix (TND) *",
+    "fieldStock": "Stock *",
+    "fieldCategory": "Catégorie",
+    "fieldImageUrl": "URL image",
+    "fieldDescription": "Description",
+    "colProduct": "Produit",
+    "colCategory": "Catégorie",
+    "colPrice": "Prix",
+    "colStock": "Stock",
+    "colEmbedding": "Embedding",
+    "colActions": "Actions",
+    "empty": "Aucun produit",
+    "confirmDelete": "Supprimer ce produit ?",
+    "visionTitle": "Test Vision IA",
+    "visionDesc": "Téléchargez une image produit pour tester la reconnaissance IA + matching stock",
+    "visionAnalyzing": "Analyse en cours...",
+    "visionChoose": "Choisir une image",
+    "visionAnalysis": "Analyse Vision",
+    "stockMatch": "Correspondance Stock",
+    "productFound": "Produit trouvé",
+    "noMatch": "Aucun produit correspondant",
+    "visionError": "Erreur analyse"
+  },
+  "orders": {
+    "title": "Commandes",
+    "allStatuses": "Tous les statuts",
+    "colId": "#",
+    "colClient": "Client",
+    "colStatus": "Statut",
+    "colItems": "Articles",
+    "colChannel": "Canal",
+    "colTotal": "Total",
+    "colDate": "Date",
+    "colActions": "Actions",
+    "items": "article(s)",
+    "empty": "Aucune commande",
+    "orderDetail": "Commande",
+    "address": "Adresse",
+    "notes": "Notes",
+    "status": {
+      "pending": "En attente",
+      "confirmed": "Confirmée",
+      "paid": "Payée",
+      "shipped": "Expédiée",
+      "delivered": "Livrée",
+      "cancelled": "Annulée"
+    }
+  },
+  "conversations": {
+    "title": "Conversations",
+    "search": "Rechercher...",
+    "empty": "Aucune conversation",
+    "selectPrompt": "Sélectionnez une conversation",
+    "noMessages": "Aucun message",
+    "noFSM": "Aucune transition enregistrée",
+    "tabMessages": "Messages",
+    "tabFSM": "FSM Log",
+    "send": "Envoyer",
+    "typeMessage": "Tapez un message...",
+    "searchPlaceholder": "Rechercher une conversation...",
+    "emptyHint": "Commencez à discuter avec vos clients sur WhatsApp, Instagram ou Facebook."
+  },
+  "settings": {
+    "title": "Paramètres",
+    "store": "Boutique",
+    "whatsapp": "WhatsApp",
+    "payments": "Paiements",
+    "users": "Utilisateurs",
+    "agent": "Agent IA",
+    "social": "Réseaux Sociaux",
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "language": "Langue",
+    "langFr": "Français",
+    "langAr": "Arabe",
+    "langEn": "Anglais",
+    "langDe": "Allemand"
+  },
+  "appointments": {
+    "title": "Rendez-vous",
+    "noAppointments": "Aucun rendez-vous",
+    "loading": "Chargement...",
+    "add": "Nouveau rendez-vous",
+    "client": "Client",
+    "date": "Date",
+    "time": "Heure",
+    "service": "Service",
+    "status": {
+      "pending": "En attente",
+      "confirmed": "Confirmé",
+      "cancelled": "Annulé"
+    }
+  },
+  "storefront": {
+    "notFound": "Boutique introuvable",
+    "notFoundDesc": "Cette boutique n'existe pas ou a été désactivée.",
+    "products": "Nos Produits",
+    "findUs": "Nous Trouver",
+    "call": "Appeler",
+    "orderWhatsApp": "Commander sur WhatsApp",
+    "inStock": "En stock",
+    "outOfStock": "Rupture de stock",
+    "loading": "Chargement...",
+    "open": "Ouvert",
+    "closed": "Fermé",
+    "close": "Fermer",
+    "addToCart": "Ajouter au panier",
+    "orderMessage": "Bonjour, je souhaite commander"
+  },
+  "superAdmin": {
+    "title": "Super Administration",
+    "tenants": "Locataires",
+    "stats": "Statistiques",
+    "loading": "Chargement...",
+    "noData": "Aucune donnée"
+  },
+  "stock": {
+    "title": "Sources de Stock",
+    "add": "Ajouter une source",
+    "noSources": "Aucune source",
+    "loading": "Chargement..."
+  },
+  "social": {
+    "title": "Social Broadcast",
+    "publish": "Publier",
+    "schedule": "Programmer",
+    "loading": "Chargement..."
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non",
+    "search": "Rechercher",
+    "noData": "Aucune donnée"
+  },
+  "payment_links": {
+    "title": "Liens de Paiement",
+    "subtitle": "Générez et envoyez des liens de paiement sécurisés à vos clients",
+    "create": "Nouveau lien",
+    "create_title": "Créer un lien de paiement",
+    "create_subtitle": "Le provider sera sélectionné automatiquement selon votre pays",
+    "amount": "Montant",
+    "currency": "Devise",
+    "description": "Description",
+    "description_placeholder": "Ex: Commande #123, Prestation de service...",
+    "channel": "Canal d'origine",
+    "customer_info": "Informations client (optionnel)",
+    "customer_name": "Nom du client",
+    "customer_phone": "Téléphone",
+    "customer_email": "Email du client",
+    "cancel": "Annuler",
+    "submit": "Créer le lien",
+    "creating": "Génération...",
+    "share": "Partager",
+    "send": "Envoyer",
+    "send_title": "Envoyer le lien",
+    "send_channel": "Canal d'envoi",
+    "send_recipient": "Destinataire",
+    "send_message": "Message (optionnel)",
+    "send_message_placeholder": "Message personnalisé (le lien sera ajouté automatiquement)",
+    "send_success": "Lien envoyé avec succès !",
+    "send_success_desc": "Le client a reçu le lien de paiement.",
+    "view_link": "Voir le lien",
+    "invoice_pdf": "Facture PDF",
+    "delete": "Supprimer",
+    "delete_confirm": "Supprimer ce lien de paiement ?",
+    "filter_all": "Tous",
+    "filter_pending": "En attente",
+    "filter_paid": "Payés",
+    "filter_expired": "Expirés",
+    "filter_failed": "Échoués",
+    "empty_title": "Aucun lien de paiement",
+    "empty_desc": "Créez votre premier lien de paiement et envoyez-le à vos clients",
+    "stats_paid": "Total payé",
+    "stats_pending": "En attente",
+    "stats_paid_count": "Liens payés",
+    "stats_total": "Liens créés",
+    "refresh": "Rafraîchir",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "page_of": "Page {page} / {total}",
+    "sent_at": "Envoyé",
+    "paid_at": "Payé",
+    "status_pending": "En attente",
+    "status_paid": "Payé",
+    "status_expired": "Expiré",
+    "status_failed": "Échoué",
+    "copy_link": "Copier le lien",
+    "copied": "Lien copié dans le presse-papiers !",
+    "instagram_copy": "Lien copié ! Collez-le dans votre story ou message Instagram.",
+    "provider_not_configured": "Aucun provider de paiement configuré. Rendez-vous dans Paramètres.",
+    "error_loading": "Erreur lors du chargement des liens",
+    "error_creating": "Erreur lors de la création du lien",
+    "error_sending": "Erreur lors de l'envoi",
+    "error_deleting": "Erreur lors de la suppression"
+  }
+}

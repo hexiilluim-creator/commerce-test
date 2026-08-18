@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/omnicall_enterprise.py
+# hypothesis_version: 6.131.9
+
+[200, 404, '/analyze', '/emotions/alerts', '/handoffs', '/leads/hot', '/omnicall-enterprise', 'Escalade introuvable', 'OmniCall Enterprise', 'alerts', 'cid', 'confidence', 'criteria', 'customer_id', 'emotion', 'escalation', 'explanation', 'handoff', 'handoff_id', 'handoffs', 'label', 'lead', 'leads', 'lim', 'memory', 'reasons', 'score', 'should_escalate', 'sid', 'success', 'summaries', 'total', 'triggers']

@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/security_overlay/guard.py
+# hypothesis_version: 6.131.9
+
+[60.0, 300.0, 403, 503, 2048, 'ALLOWED', 'CAPPED-DENIED', 'ai_credits', 'current_plan', 'current_plan_label', 'error', 'expires_at', 'feature', 'feature_not_in_plan', 'features', 'generic', 'is_active', 'is_paid', 'message', 'plan_code', 'plan_label', 'security.guard', 'upgrade_required']

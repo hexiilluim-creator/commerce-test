@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/blueprints.py
+# hypothesis_version: 6.131.9
+
+['/', '/blueprints', '/customize', '/my-store', '/select', '/{blueprint_id}', 'Blueprint non trouvé', 'blueprints']

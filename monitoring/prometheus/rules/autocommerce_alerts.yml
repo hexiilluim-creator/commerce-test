@@ -1,0 +1,28 @@
+groups:
+  - name: autocommerce-alerts
+    rules:
+      - alert: HighErrorRate5xx
+        expr: sum(rate(http_requests_total{status=~"5.."}[5m])) / clamp_min(sum(rate(http_requests_total[5m])), 1) > 0.01
+        for: 5m
+        labels: {severity: critical}
+        annotations: {summary: "Taux 5xx > 1% pendant 5 min"}
+      - alert: PaymentWebhookStuck
+        expr: time() - max(billing_webhook_last_success_timestamp_seconds) > 600
+        for: 5m
+        labels: {severity: critical}
+        annotations: {summary: "Dernier webhook paiement > 10 min"}
+      - alert: AIMonthlyBudget
+        expr: ai_usage_usd_monthly > (0.8 * AI_BUDGET_HARD_LIMIT_USD)
+        for: 5m
+        labels: {severity: warning}
+        annotations: {summary: "Budget IA > 80%"}
+      - alert: RedisDown
+        expr: up{job="redis"} == 0
+        for: 2m
+        labels: {severity: critical}
+        annotations: {summary: "Redis indisponible"}
+      - alert: DLQBacklog
+        expr: dlq_size > 1000
+        for: 5m
+        labels: {severity: warning}
+        annotations: {summary: "DLQ > 1000 messages"}

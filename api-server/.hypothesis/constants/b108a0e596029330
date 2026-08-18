@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/main.py
+# hypothesis_version: 6.131.9
+
+[204, 403, 500, '*', ',', '/api', '/api/health/live', '/api/health/ready', '/api/v1', '/docs', '/health', '/health/live', '/health/ready', '/metrics', '/openapi.json', '/redoc', '/{full_path:path}', '1', '27.1.0', ';', 'Authorization', 'AutoCommerce V27.1', 'CORS_ORIGINS', 'Content-Type', 'DELETE', 'FEATURE_FLAG_OTEL', 'GET', 'HTTP error', 'HTTP exception', 'OPTIONS', 'PATCH', 'POST', 'PUT', 'SKIP_LIMITER', 'X-CSRF-Token', 'X-Internal-Token', 'X-Request-ID', 'development', 'error', 'headers', 'iso', 'message', 'prod', 'production', 'staging', 'test', 'trace_id', 'unhandled_exception', 'unknown', 'utf-8']

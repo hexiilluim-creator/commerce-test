@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/upload_security.py
+# hypothesis_version: 6.131.9
+
+[b'%PDF', b'GIF87a', b'GIF89a', b'WEBP', b'\x89PNG', b'\xff\xd8\xff', 1024, '/tmp/uploads', 'Empty file', 'S3_ACCESS_KEY', 'S3_BUCKET', 'S3_ENDPOINT', 'S3_PUBLIC_URL', 'S3_REGION', 'S3_SECRET_KEY', 'application/pdf', 'aws_access_key_id', 'document', 'endpoint_url', 'filename', 'image', 'image/*', 'image/gif', 'image/jpeg', 'image/png', 'image/webp', 'local', 'mime_type', 'operation failed: %s', 'region_name', 's3', 'size', 'storage_backend', 'storage_key', 'stored', 'upload.bin', 'url', 'us-east-1']

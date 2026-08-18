@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/active_router.py
+# hypothesis_version: 6.131.9
+
+[100, 'T', 'active', 'active_rollout', 'beta_store', 'bucket', 'channel', 'circuit_open', 'error', 'error_type', 'facebook', 'flag_disabled', 'global_rollout_100', 'handler_name', 'instagram', 'missing_store_id', 'mode', 'reason', 'rollout_100', 'rollout_bucket_in', 'rollout_bucket_out', 'rollout_pct', 'rollout_zero', 'route', 'store_id', 'tiktok', 'v8_fallback', 'whatsapp']

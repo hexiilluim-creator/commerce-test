@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/stock.py
+# hypothesis_version: 6.131.9
+
+[100, 201, 204, 404, 410, 422, '/', '/bulk-stock', '/products', '/public', '/stock', '/{product_id}', '/{product_id}/', '; ', 'Invalid JSON body', 'Legacy store ID', 'Link', 'Product not found', 'Products', 'Validation error', 'X-Deprecated-Route', 'category', 'count', 'created_at', 'description', 'external_code', 'has_embedding', 'id', 'image_url', 'is_active', 'items', 'name', 'page', 'price', 'product_id', 'quantity', 'sku', 'stock_available', 'stock_qty', 'stock_reserved', 'tags', 'total', 'true', 'updated']

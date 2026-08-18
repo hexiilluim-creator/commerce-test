@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/health.py
+# hypothesis_version: 6.131.9
+
+[1.0, 1000000000.0, 100, 200, 503, 1000, '.dlq', '/', '/db', '/detailed', '/health', '/live', '/ready', '/redis', 'Health', 'SELECT 1', 'VERSION', 'ai', 'ai.dlq', 'billing', 'billing.dlq', 'breakers', 'celery', 'celery_queues', 'celery_workers', 'circuit_breakers', 'components', 'configured', 'count', 'critical', 'database', 'degraded', 'depths', 'detail', 'disk', 'error', 'free_gb', 'health_check_error', 'latency_ms', 'live', 'misconfigured', 'name', 'ok', 'open', 'open_count', 'openai', 'payments.dlq', 'probe', 'ready', 'redis', 'sk-', 'social', 'social.dlq', 'state', 'status', 'timestamp', 'unknown', 'used_pct', 'utf-8', 'version', 'warning', 'whatsapp', 'whatsapp.dlq', 'workers']

@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/normalizers/common.py
+# hypothesis_version: 6.131.9
+
+['+00:00', 'Z', 'address', 'attachments', 'audio', 'button', 'button_id', 'button_title', 'caption', 'display_name', 'document', 'external_id', 'handle', 'id', 'image', 'interactive', 'latitude', 'location', 'location_address', 'location_name', 'longitude', 'media_id', 'media_url', 'mime_type', 'missing', 'name', 'payload', 'phone', 'recipient_id', 'reply_id', 'reply_type', 'sender_id', 'sha256', 'status', 'text', 'title', 'type', 'unknown', 'url', 'username', 'video']

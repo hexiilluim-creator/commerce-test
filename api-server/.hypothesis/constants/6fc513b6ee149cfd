@@ -1,0 +1,4 @@
+# file: /usr/local/bin/pytest
+# hypothesis_version: 6.131.9
+
+['-script.pyw', '.exe', '__main__']

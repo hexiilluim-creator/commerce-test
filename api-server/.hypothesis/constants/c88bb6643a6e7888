@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/api/v1/ai.py
+# hypothesis_version: 6.131.9
+
+[200, 400, 500, 502, 100000, 7000000, '/ai', '/scan-invoice', '/search', '/spending-insight', '/vision/upload', '/vision/url', 'AI', '```json|```', 'accepted', 'ai', 'brand', 'color', 'content', 'count', 'dashboard', 'image', 'image/jpeg', 'insight', 'keywords', 'operation failed: %s', 'query', 'rejected', 'results', 'role', 'spending_insight', 'stock_match', 'type', 'user', 'viewer', 'vision_analysis']

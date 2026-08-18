@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/lib/redis_client.py
+# hypothesis_version: 6.131.9
+
+[5.0, 'REDIS_SOCKET_TIMEOUT']

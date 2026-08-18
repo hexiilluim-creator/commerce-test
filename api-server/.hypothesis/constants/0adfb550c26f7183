@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/services/agent_mute.py
+# hypothesis_version: 6.131.9
+
+[100, 120, 1440, '***', '+', '1', ':', '__await__', 'active', 'ai_mode', 'customer_phone', 'expires_at_unix', 'message', 'minutes', 'mute', 'muted', 'partial', 'remaining_minutes', 'remaining_seconds', 'status', 'store_id', 'summary', 'taken_over', 'takeover', 'takeovers', 'test']

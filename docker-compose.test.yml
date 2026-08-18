@@ -1,0 +1,51 @@
+version: '3.9'
+services:
+  api:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+      target: runtime
+    environment:
+      ENV: test
+      LLM_PROVIDER: stub
+      MOCK_PSP: "1"
+      FLOUCI_BASE_URL: http://mock-flouci:8011/api
+      KONNECT_BASE_URL: http://mock-konnect:8012/api/v2
+      PAYMEE_BASE_URL: http://mock-paymee:8013/api/v2
+      STRIPE_MOCK_BASE_URL: http://stripe-mock:12111
+    depends_on:
+      - mock-flouci
+      - mock-konnect
+      - mock-paymee
+      - stripe-mock
+  mock-flouci:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+      target: runtime
+    command: ["python3", "scripts/mock_psp.py"]
+    environment:
+      PSP_NAME: flouci
+      PSP_PORT: "8011"
+  mock-konnect:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+      target: runtime
+    command: ["python3", "scripts/mock_psp.py"]
+    environment:
+      PSP_NAME: konnect
+      PSP_PORT: "8012"
+  mock-paymee:
+    build:
+      context: ./api-server
+      dockerfile: Dockerfile
+      target: runtime
+    command: ["python3", "scripts/mock_psp.py"]
+    environment:
+      PSP_NAME: paymee
+      PSP_PORT: "8013"
+  stripe-mock:
+    image: stripe/stripe-mock:latest
+    ports:
+      - "12111:12111"

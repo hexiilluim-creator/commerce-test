@@ -1,0 +1,4 @@
+# file: /home/ubuntu/staging_autocommerce/final_package/source/api-server/omnicall_v9/auto_config.py
+# hypothesis_version: 6.131.9
+
+[100, '1', 'SYSTEM_LOAD_HIGH']
