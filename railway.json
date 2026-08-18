@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "cd api-server && ./start.sh",
+    "startCommand": "sh -c 'cd api-server && ./start.sh'",
     "restartPolicyType": "ON_FAILURE",
     "healthcheckPath": "/api/health",
     "healthcheckTimeout": 100,
