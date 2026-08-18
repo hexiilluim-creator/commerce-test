@@ -8,6 +8,11 @@
     "restartPolicyType": "ON_FAILURE",
     "healthcheckPath": "/api/health",
     "healthcheckTimeout": 100,
-    "serviceName": "api"
+    "serviceName": "api",
+    "env": {
+      "ENV": "development",
+      "STRICT_MODE": "NO",
+      "PYTHONPATH": "."
+    }
   }
 }
