@@ -153,7 +153,7 @@ else:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=_cors_origins,
+    allow_origins=["https://commerce-frontend-production-68ce.up.railway.app"],
     allow_credentials=_cors_origins != ["*"],
     allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=[
