@@ -151,17 +151,18 @@ elif not _cors_origins:
 else:
     logger.info("CORS origins configured", origins=_cors_origins)
 
+# V27.1 FIX: Supporte à la fois le domaine Railway et les origines configurées
+_final_origins = list(set(_cors_origins + ["https://commerce-frontend-production-68ce.up.railway.app"]))
+if "*" in _final_origins:
+    _final_origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://commerce-frontend-production-68ce.up.railway.app"],
-    allow_credentials=_cors_origins != ["*"],
-    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allow_headers=[
-        "Authorization",
-        "Content-Type",
-        "X-Request-ID",
-        "X-CSRF-Token",
-    ],
+    allow_origins=_final_origins,
+    allow_credentials=_final_origins != ["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 # 6/ CSRF Protection
@@ -174,7 +175,7 @@ app.add_middleware(AuditLogMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
 
 # 3/ Input Validation
-# app.add_middleware(InputValidationMiddleware)
+app.add_middleware(InputValidationMiddleware)
 
 # 2/ Body size limit
 app.add_middleware(BodySizeLimitMiddleware)
