@@ -81,17 +81,15 @@ async def _get_redis():
 
 # Alias demandé par auth.py : from services.ai_guardrails import get_redis
 def get_redis():
-    """Alias synchrone vers services.redis_lock.get_redis (compatibilité auth.py)."""
-    try:
-        from services.redis_lock import get_redis as _get  # type: ignore[import]
-        return _get()
-    except Exception:
-        try:
-            import redis as redis_lib  # type: ignore[import]
-            url = os.environ.get("REDIS_URL", "redis://localhost:6379/0")
-            return redis_lib.Redis.from_url(url, socket_connect_timeout=1)
-        except Exception:
-            return None
+    """Retourne un client Redis.
+    
+    NOTE: Bien que ce soit une fonction synchrone, elle retourne un client 
+    redis.asyncio.Redis pour compatibilité avec les appels 'await r.get()' 
+    dans auth.py.
+    """
+    import redis.asyncio as aioredis
+    url = os.environ.get("REDIS_URL", "redis://localhost:6379/0")
+    return aioredis.Redis.from_url(url, decode_responses=True, socket_connect_timeout=1)
 
 
 # ── DB helpers (fallback partagé cross-worker) ────────────────────────────────
